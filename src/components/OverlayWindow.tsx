@@ -1,4 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
+
+const isElectron = () => typeof window !== 'undefined' && typeof window.electronAPI !== 'undefined'
 import data from '../data/set16.json'
 import type { TFTData, RankedVariant } from '../lib/types'
 import { HexGrid } from './TFTBoard'
@@ -29,12 +31,12 @@ export default function OverlayWindow() {
 
   // Set collapsed size on mount
   useEffect(() => {
-    window.electronAPI?.resizeOverlay?.(COLLAPSED_H)
+    if (isElectron()) window.electronAPI?.resizeOverlay?.(COLLAPSED_H)
   }, [])
 
   // Listen for comp updates from main app
   useEffect(() => {
-    window.electronAPI?.onCompUpdated?.((key: string) => setCompKey(key))
+    if (isElectron()) window.electronAPI?.onCompUpdated?.((key: string) => setCompKey(key))
   }, [])
 
   const rv = useMemo((): RankedVariant | null => {
@@ -60,13 +62,13 @@ export default function OverlayWindow() {
     const next = !expanded
     setExpanded(next)
     const h = next ? (augCheckMode ? AUG_CHECK_H : EXPANDED_H) : COLLAPSED_H
-    window.electronAPI?.resizeOverlay?.(h)
+    if (isElectron()) window.electronAPI?.resizeOverlay?.(h)
   }
 
   function toggleAugCheck() {
     const next = !augCheckMode
     setAugCheckMode(next)
-    if (expanded) window.electronAPI?.resizeOverlay?.(next ? AUG_CHECK_H : EXPANDED_H)
+    if (expanded && isElectron()) window.electronAPI?.resizeOverlay?.(next ? AUG_CHECK_H : EXPANDED_H)
   }
 
   function setSlotAug(i: number, value: string) {
@@ -131,7 +133,7 @@ export default function OverlayWindow() {
           </button>
           <button
             className="ov-x"
-            onClick={() => window.electronAPI?.toggleOverlay?.()}
+            onClick={() => { if (isElectron()) window.electronAPI?.toggleOverlay?.() }}
             title="Hide overlay (Ctrl+Shift+T)"
           >
             ✕
@@ -206,9 +208,9 @@ export default function OverlayWindow() {
             <div
               className="ov-ac-best"
               onClick={() => {
-                window.electronAPI?.setComp?.(ovTopPick.variant.id)
+                if (isElectron()) window.electronAPI?.setComp?.(ovTopPick.variant.id)
                 setAugCheckMode(false)
-                window.electronAPI?.resizeOverlay?.(EXPANDED_H)
+                if (isElectron()) window.electronAPI?.resizeOverlay?.(EXPANDED_H)
               }}
             >
               <span style={{ color: '#f0a830', marginRight: 6 }}>Best →</span>

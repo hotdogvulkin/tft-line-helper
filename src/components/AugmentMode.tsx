@@ -1,5 +1,7 @@
 import { useState, useMemo } from 'react'
 import type { TFTData, RankedVariant, AugmentCategory } from '../lib/types'
+
+const isElectron = () => typeof window !== 'undefined' && typeof window.electronAPI !== 'undefined'
 import LineView from './LineView'
 import AugmentPicker from './AugmentPicker'
 import LineCard from './LineCard'
@@ -177,7 +179,7 @@ export default function AugmentMode({ data }: AugmentModeProps) {
                 rank={i}
                 showScore
                 onClick={() => {
-                  window.electronAPI?.setComp?.(rv.variant.id)
+                  if (isElectron()) window.electronAPI?.setComp?.(rv.variant.id)
                   setSelectedVariant(rv)
                 }}
               />

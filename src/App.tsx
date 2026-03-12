@@ -5,6 +5,10 @@ import AugmentMode from './components/AugmentMode'
 import data from './data/set16.json'
 import type { TFTData } from './lib/types'
 
+// window.process is not exposed with contextIsolation: true, so we detect
+// Electron by the presence of the preload-injected bridge instead.
+const isElectron = () => typeof window !== 'undefined' && typeof window.electronAPI !== 'undefined'
+
 // Declare IPC bridge added by Electron preload
 declare global {
   interface Window {
@@ -28,20 +32,19 @@ export default function App() {
   const [overlayVisible, setOverlayVisible] = useState(false)
 
   useEffect(() => {
-    // Sync initial overlay visibility state
+    if (!isElectron()) return
     window.electronAPI?.getOverlayVisible?.().then(v => setOverlayVisible(v))
-    // Keep in sync when shortcut toggles it
     window.electronAPI?.onOverlayVisibility?.(v => setOverlayVisible(v))
   }, [])
 
   function toggleAot() {
     const next = !aot
     setAot(next)
-    window.electronAPI?.setAlwaysOnTop(next)
+    if (isElectron()) window.electronAPI?.setAlwaysOnTop(next)
   }
 
   function toggleOverlay() {
-    window.electronAPI?.toggleOverlay?.()
+    if (isElectron()) window.electronAPI?.toggleOverlay?.()
     // Optimistic update; real value comes back via onOverlayVisibility
     setOverlayVisible(v => !v)
   }
@@ -53,20 +56,24 @@ export default function App() {
         <span className="app-meta">
           Set {tftData.meta.set} · Patch {tftData.meta.patch}
         </span>
-        <button
-          className={`aot-btn${overlayVisible ? ' active' : ''}`}
-          onClick={toggleOverlay}
-          title="Toggle overlay (Ctrl+Shift+T)"
-        >
-          🖥 {overlayVisible ? 'Overlay ON' : 'Overlay'}
-        </button>
-        <button
-          className={`aot-btn${aot ? ' active' : ''}`}
-          onClick={toggleAot}
-          title="Toggle Always on Top"
-        >
-          📌 {aot ? 'Pinned' : 'Pin'}
-        </button>
+        {isElectron() && (
+          <>
+            <button
+              className={`aot-btn${overlayVisible ? ' active' : ''}`}
+              onClick={toggleOverlay}
+              title="Toggle overlay (Ctrl+Shift+T)"
+            >
+              🖥 {overlayVisible ? 'Overlay ON' : 'Overlay'}
+            </button>
+            <button
+              className={`aot-btn${aot ? ' active' : ''}`}
+              onClick={toggleAot}
+              title="Toggle Always on Top"
+            >
+              📌 {aot ? 'Pinned' : 'Pin'}
+            </button>
+          </>
+        )}
       </div>
 
       <Tabs active={tab} onChange={setTab} />

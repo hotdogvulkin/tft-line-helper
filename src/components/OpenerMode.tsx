@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import type { TFTData, RankedVariant } from '../lib/types'
+
+const isElectron = () => typeof window !== 'undefined' && typeof window.electronAPI !== 'undefined'
 import LineView from './LineView'
 import RuneterraMap from './RuneterraMap'
 
@@ -11,7 +13,7 @@ export default function OpenerMode({ data }: OpenerModeProps) {
   const [selectedVariant, setSelectedVariant] = useState<RankedVariant | null>(null)
 
   useEffect(() => {
-    if (selectedVariant) {
+    if (selectedVariant && isElectron()) {
       window.electronAPI?.setComp?.(selectedVariant.variant.id)
     }
   }, [selectedVariant])

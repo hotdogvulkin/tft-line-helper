@@ -56,6 +56,15 @@ export default function App() {
         <span className="app-meta">
           Set {tftData.meta.set} · Patch {tftData.meta.patch}
         </span>
+        {!isElectron() && (
+          <a
+            className="dl-btn"
+            href="https://github.com/hotdogvulkin/tft-line-helper/releases/latest/download/TFT%20Line%20Helper-1.0.0-arm64.dmg"
+            download
+          >
+            ↓ Download for Mac
+          </a>
+        )}
         {isElectron() && (
           <>
             <button

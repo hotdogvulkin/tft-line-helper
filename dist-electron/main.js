@@ -31,11 +31,10 @@ function createWindow() {
 }
 const OV_W = 320;
 function createOverlayWindow() {
-    const { width } = electron_1.screen.getPrimaryDisplay().workAreaSize;
     overlayWin = new electron_1.BrowserWindow({
         width: OV_W,
         height: 40,
-        x: width - OV_W - 10,
+        x: overlayX(),
         y: 10,
         show: false,
         alwaysOnTop: true,
@@ -43,6 +42,7 @@ function createOverlayWindow() {
         frame: false,
         skipTaskbar: true,
         resizable: false,
+        fullscreenable: false,
         webPreferences: {
             preload: PRELOAD,
             contextIsolation: true,
@@ -59,6 +59,9 @@ function createOverlayWindow() {
     }
     overlayWin.on('closed', () => { overlayWin = null; });
 }
+function overlayX() {
+    return electron_1.screen.getPrimaryDisplay().workAreaSize.width - OV_W - 10;
+}
 function toggleOverlay() {
     if (!overlayWin)
         return;
@@ -66,8 +69,8 @@ function toggleOverlay() {
         overlayWin.hide();
     }
     else {
+        overlayWin.setPosition(overlayX(), 10);
         overlayWin.show();
-        overlayWin.focus();
     }
     const visible = overlayWin.isVisible();
     win?.webContents.send('overlay-visibility', visible);
@@ -104,5 +107,5 @@ electron_1.ipcMain.on('overlay-toggle', (_event) => {
 });
 electron_1.ipcMain.handle('overlay-is-visible', () => overlayWin?.isVisible() ?? false);
 electron_1.ipcMain.on('overlay-resize', (_event, height) => {
-    overlayWin?.setSize(OV_W, height);
+    overlayWin?.setBounds({ x: overlayX(), y: 10, width: OV_W, height });
 });

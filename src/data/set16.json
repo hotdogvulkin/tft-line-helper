@@ -1,0 +1,4505 @@
+{
+  "meta": {
+    "set": 16,
+    "setName": "Lore and Legends",
+    "patch": "16.6",
+    "lastUpdated": "2026-03-07",
+    "description": "TFT Set 16 meta comp guide. All data from tft_set16_comp_reference.json."
+  },
+  "archetypes": [
+    {
+      "id": "piltover",
+      "name": "Piltover",
+      "tier": "C",
+      "description": "City of Progress. T-Hex mech grows stronger each stage. Pilot the T-Hex with your lowest-value unit. Piltover mods activate at 2/4/6 units.",
+      "variants": [
+        {
+          "id": "piltover_warden_thex",
+          "name": "Warden T-Hex",
+          "tier": "C",
+          "playstyle": "fast8",
+          "difficulty": "medium",
+          "description": "T-Hex + 6 Piltover with Gunslinger and Warden traits. Look for Mining Drill on Stage 4 to Fast 9. Cap with Azir.",
+          "gameplan": "T-Hex + 6 Piltover with Gunslinger and Warden traits. Look for Mining Drill on Stage 4 to Fast 9. Cap with Azir.",
+          "conditions": [
+            "Put LOWEST value unit on your board in the pilot hex — Orianna or even Sand Soldier. Pilot scaling is not worth it.",
+            "Piltover emblem dramatically upgrades the comp.",
+            "2nd T-Hex with full items is an alternate win condition."
+          ],
+          "coreUnits": [
+            "Caitlyn",
+            "Vi",
+            "Orianna",
+            "Jayce",
+            "Loris"
+          ],
+          "carryItems": {
+            "Caitlyn": [
+              "Rageblade",
+              "Kraken's Fury",
+              "Last Whisper"
+            ],
+            "Vi": [
+              "Gargoyle Stoneplate",
+              "Warmog's Armor"
+            ],
+            "Jayce": [
+              "Sunfire Cape"
+            ]
+          },
+          "levelingPattern": "Fast 8. Do NOT chase Cait 3. Find Mining Drill to Fast 9.",
+          "levelingGuide": [
+            "Stage 2: Play from Cait 2 + Vi/Loris opener. Can roll for Bard if cheap via Epoch or Trade Sector.",
+            "Stage 3: Play around 4 Piltover. Do NOT chase Cait 3 — 3-star caster nerf made it not worth it.",
+            "Stage 4: Unlock T-Hex and play 6 Piltover + Gunslinger + Warden. Find Mining Drill to Fast 9. If you miss Drill, hold 6 Piltover until finding Azir."
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "Stage 1-2",
+              "units": [
+                "Caitlyn",
+                "Vi",
+                "Loris"
+              ],
+              "traits": [
+                "Piltover 2"
+              ],
+              "note": "Play from Cait 2 + Vi/Loris opener. Can roll for Bard if cheap via Epoch or Trade Sector."
+            },
+            "mid": {
+              "stage": "Stage 3",
+              "units": [
+                "Caitlyn",
+                "Vi",
+                "Orianna",
+                "Jayce",
+                "Loris"
+              ],
+              "traits": [
+                "Piltover 4",
+                "Warden 2"
+              ],
+              "note": "Play around 4 Piltover. Do NOT chase Cait 3."
+            },
+            "late": {
+              "stage": "Stage 4+",
+              "units": [
+                "Caitlyn",
+                "Vi",
+                "Orianna",
+                "Jayce",
+                "Loris"
+              ],
+              "traits": [
+                "Piltover 6",
+                "Warden 3",
+                "Gunslinger"
+              ],
+              "note": "Unlock T-Hex, play 6 Piltover. Find Mining Drill to Fast 9. Cap with Azir.",
+              "positions": [
+                {
+                  "unit": "Nautilus",
+                  "row": 3,
+                  "col": 0
+                },
+                {
+                  "unit": "Ornn",
+                  "row": 3,
+                  "col": 1
+                },
+                {
+                  "unit": "Shyvana",
+                  "row": 3,
+                  "col": 2
+                },
+                {
+                  "unit": "Loris",
+                  "row": 3,
+                  "col": 3
+                },
+                {
+                  "unit": "Braum",
+                  "row": 3,
+                  "col": 4
+                },
+                {
+                  "unit": "T-Hex",
+                  "row": 2,
+                  "col": 6
+                },
+                {
+                  "unit": "Orianna",
+                  "row": 1,
+                  "col": 6
+                },
+                {
+                  "unit": "Seraphine",
+                  "row": 0,
+                  "col": 0
+                },
+                {
+                  "unit": "Lucian & Senna",
+                  "row": 0,
+                  "col": 6
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Magnetron Coil",
+              "score": 5,
+              "note": "Best T-Hex upgrade."
+            },
+            {
+              "augment": "Gigantic Ray",
+              "score": 4,
+              "note": "Strong T-Hex upgrade."
+            },
+            {
+              "augment": "Econ augments",
+              "score": 3,
+              "note": "Preferred for Fast 8."
+            }
+          ],
+          "augmentAvoid": [],
+          "tips": [
+            "Put LOWEST value unit on your board in the pilot hex — Orianna or even Sand Soldier. Pilot scaling is not worth it.",
+            "Piltover emblem dramatically upgrades the comp.",
+            "2nd T-Hex with full items is an alternate win condition."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zaun",
+      "name": "Zaun",
+      "tier": "A",
+      "description": "Undercity of Zaun — Shimmer-infused rogues and machines. Zaunites explode into Shimmer on death. Needs emblem augments to truly shine.",
+      "variants": [
+        {
+          "id": "zaun_zaunara",
+          "name": "Zaunara (Warwick Flex Fast 8)",
+          "tier": "A",
+          "playstyle": "fast8",
+          "difficulty": "medium",
+          "description": "Warwick 2 + 5 Zaun + Singed. Cap on Level 9 with Shyvana + Kindred + Lucian & Senna. Emblem augments (Zaun/Gunslinger/Juggernaut) make this comp shine.",
+          "gameplan": "Warwick 2 + 5 Zaun + Singed. Cap on Level 9 with Shyvana + Kindred + Lucian & Senna. Emblem augments (Zaun/Gunslinger/Juggernaut) make this comp shine.",
+          "conditions": [
+            "Always place main tank adjacent to Warwick — protects him from enemy carries.",
+            "Jinx items FIRST, Warwick items second.",
+            "Warwick unlock: field Jinx AND Vi both holding an item at Level 7.",
+            "Singed unlock: lose 35 HP + field 4 unique Zaunites or Juggernauts — happens naturally on lose streak."
+          ],
+          "coreUnits": [
+            "Warwick",
+            "Jinx",
+            "Singed",
+            "Vi",
+            "Shyvana",
+            "Kindred",
+            "Lucian & Senna"
+          ],
+          "carryItems": {
+            "Warwick": [
+              "Titan's Resolve",
+              "Sterak's Gage",
+              "Bloodthirster"
+            ],
+            "Jinx": [
+              "Rageblade",
+              "Last Whisper",
+              "Giant Slayer"
+            ],
+            "Singed": [
+              "Sunfire Cape",
+              "Warmog's"
+            ]
+          },
+          "levelingPattern": "Winstreak OR lose streak for Singed. Level 8 at 4-2. Push 9 for Shyvana + Kindred + Lucian.",
+          "levelingGuide": [
+            "Stage 2: Winstreak with Zaun Vi/Briar/Qiyana opener OR lose streak for Singed. Jinx items first, Warwick second.",
+            "Stage 3: Always itemize Jinx. Winstreaking: level early to unlock Warwick. Lose streaking: roll on 7 for Jinx/Vi/Mundo upgrades.",
+            "Stage 4: Level 8 at 4-2. Find Warwick 2, 5 Zaun, upgraded tank (Wukong 2 > Mundo 2). Level 9: Ziggs over Blitz, add Shyvana with items."
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "Stage 1-2",
+              "units": [
+                "Briar",
+                "Qiyana",
+                "Vi",
+                "Jinx"
+              ],
+              "traits": [
+                "Zaun 2"
+              ],
+              "note": "Winstreak with Zaun Vi/Briar/Qiyana opener OR lose streak for Singed. Jinx items first."
+            },
+            "mid": {
+              "stage": "Stage 3",
+              "units": [
+                "Jinx",
+                "Vi",
+                "Warwick",
+                "Singed",
+                "Briar"
+              ],
+              "traits": [
+                "Zaun 5"
+              ],
+              "note": "Always itemize Jinx. Level early to unlock Warwick."
+            },
+            "late": {
+              "stage": "Stage 4+",
+              "units": [
+                "Warwick",
+                "Vi",
+                "Singed",
+                "Shyvana",
+                "Jinx",
+                "Kindred",
+                "Lucian & Senna"
+              ],
+              "traits": [
+                "Zaun 5",
+                "Gunslinger"
+              ],
+              "note": "Warwick 2 + 5 Zaun + Singed online. Level 9: Shyvana + Kindred + Lucian & Senna.",
+              "positions": [
+                {
+                  "unit": "Warwick",
+                  "row": 3,
+                  "col": 1
+                },
+                {
+                  "unit": "Vi",
+                  "row": 3,
+                  "col": 2
+                },
+                {
+                  "unit": "Singed",
+                  "row": 3,
+                  "col": 4
+                },
+                {
+                  "unit": "Shyvana",
+                  "row": 3,
+                  "col": 5
+                },
+                {
+                  "unit": "Jinx",
+                  "row": 0,
+                  "col": 1
+                },
+                {
+                  "unit": "Kindred",
+                  "row": 0,
+                  "col": 3
+                },
+                {
+                  "unit": "Lucian & Senna",
+                  "row": 0,
+                  "col": 5
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Zaun emblem",
+              "score": 5,
+              "note": "Drop a dead Zaun unit, play Fiddlesticks/Taric instead."
+            },
+            {
+              "augment": "Gunslinger emblem",
+              "score": 5,
+              "note": "Makes Warwick or Jinx vastly stronger."
+            },
+            {
+              "augment": "Juggernaut emblem",
+              "score": 5,
+              "note": "Emblem augments make this comp shine."
+            },
+            {
+              "augment": "Win Out",
+              "score": 4,
+              "note": "Winstreak version loves Win Out."
+            }
+          ],
+          "augmentAvoid": [],
+          "tips": [
+            "Always place main tank adjacent to Warwick — protects him from enemy carries.",
+            "Jinx 2 carries backline items until Kindred 2.",
+            "Final 3 Level 9 5-costs: Shyvana + Kindred + Lucian & Senna — always target these.",
+            "3 flex slots on Level 9: 2 Zaun units + 1 linking unit (Wukong/Swain/Seraphine/Garen/Neeko).",
+            "Zaun emblem: drop a dead Zaun unit, play Fiddlesticks/Taric instead.",
+            "Warwick unlock: field Jinx AND Vi both holding an item at Level 7.",
+            "Singed unlock: lose 35 HP + field 4 unique Zaunites or Juggernauts — happens naturally on lose streak."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "void",
+      "name": "The Void",
+      "tier": "A",
+      "description": "The Void — alien dimension consuming Runeterra. Mutates your strongest Void unit each round. Priority: Leeching Nucleus > Spitter Spines >> Adrenaline Modules.",
+      "variants": [
+        {
+          "id": "void_kaisa",
+          "name": "Void Kai'Sa",
+          "tier": "A",
+          "playstyle": "fast8",
+          "difficulty": "medium",
+          "description": "Kai'Sa 2 + Rift Herald 2 with 4 Void. Cap with Ziggs and Volibear. Frontline is flexible: 4 Bruisers (default) or 4 Juggernauts for higher cap.",
+          "gameplan": "Kai'Sa 2 + Rift Herald 2 with 4 Void. Cap with Ziggs and Volibear. Frontline is flexible: 4 Bruisers (default) or 4 Juggernauts for higher cap.",
+          "conditions": [
+            "BIS Void mutation: Leeching Nucleus > Spitter Spines >> Adrenaline Modules.",
+            "AP Kai'Sa shown but full AD (Shojin + IE + Last Whisper) also viable.",
+            "4 Bruisers with Volibear is default frontline, but 4 Juggernauts with Shyvana caps higher.",
+            "Win Out augment is best — gets you to Level 10 immediately."
+          ],
+          "coreUnits": [
+            "Kai'Sa",
+            "Rift Herald",
+            "Kog'Maw",
+            "Cho'Gath",
+            "Volibear",
+            "Ziggs"
+          ],
+          "carryItems": {
+            "Kai'Sa": [
+              "Shojin",
+              "Jeweled Gauntlet",
+              "Rabadon's Deathcap"
+            ],
+            "Rift Herald": [
+              "Gargoyle Stoneplate",
+              "Warmog's Armor"
+            ],
+            "Volibear": [
+              "Sunfire Cape",
+              "Warmog's Armor"
+            ],
+            "Ziggs": [
+              "Blue Buff",
+              "Rabadon's"
+            ]
+          },
+          "levelingPattern": "Fast 8. Roll for Kai'Sa 2 and Rift 2. Push 9 for Ziggs.",
+          "levelingGuide": [
+            "Stage 2: Play early Void with Kog'Maw, aim for winstreak. Arcanist > Longshot as priority.",
+            "Stage 3: If winstreaking, level to 7 early and unlock Kai'Sa. Unlock Rift Herald by 3-5 and transition to 4 Void.",
+            "Stage 4: Roll for Kai'Sa 2 and Rift 2. Flex in Shen/Mundo as 4 Bruisers until Kobuko/Volibear. Push 9 for Ziggs."
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "Stage 1-2",
+              "units": [
+                "Kog'Maw",
+                "Cho'Gath",
+                "Vel'Koz"
+              ],
+              "traits": [
+                "Void 2"
+              ],
+              "note": "Play early Void with Kog'Maw, aim for winstreak. Arcanist > Longshot as priority."
+            },
+            "mid": {
+              "stage": "Stage 3",
+              "units": [
+                "Kai'Sa",
+                "Rift Herald",
+                "Kog'Maw",
+                "Cho'Gath"
+              ],
+              "traits": [
+                "Void 4"
+              ],
+              "note": "Level to 7 early and unlock Kai'Sa. Unlock Rift Herald and transition to 4 Void."
+            },
+            "late": {
+              "stage": "Stage 4+",
+              "units": [
+                "Kai'Sa",
+                "Rift Herald",
+                "Kog'Maw",
+                "Cho'Gath",
+                "Volibear",
+                "Ziggs"
+              ],
+              "traits": [
+                "Void 4",
+                "Bruiser 4"
+              ],
+              "note": "Kai'Sa 2 + Rift 2 online. Flex 4 Bruisers or 4 Juggernauts. Push 9 for Ziggs.",
+              "positions": [
+                {
+                  "unit": "Wukong",
+                  "row": 3,
+                  "col": 0
+                },
+                {
+                  "unit": "Cho'Gath",
+                  "row": 3,
+                  "col": 1
+                },
+                {
+                  "unit": "Kobuko & Yuumi",
+                  "row": 3,
+                  "col": 2
+                },
+                {
+                  "unit": "Swain",
+                  "row": 3,
+                  "col": 3
+                },
+                {
+                  "unit": "Volibear",
+                  "row": 3,
+                  "col": 4
+                },
+                {
+                  "unit": "Rift Herald",
+                  "row": 3,
+                  "col": 5
+                },
+                {
+                  "unit": "Kog'Maw",
+                  "row": 0,
+                  "col": 0
+                },
+                {
+                  "unit": "Ziggs",
+                  "row": 0,
+                  "col": 3
+                },
+                {
+                  "unit": "Kai'Sa",
+                  "row": 0,
+                  "col": 6
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Win Out",
+              "score": 5,
+              "note": "Gets you to Level 10 immediately on 9."
+            },
+            {
+              "augment": "Econ augments",
+              "score": 4,
+              "note": "Fast 8 needs econ to stabilize."
+            },
+            {
+              "augment": "Combat augments",
+              "score": 3,
+              "note": "With healing item on Baron for Spitter Spines."
+            }
+          ],
+          "augmentAvoid": [],
+          "tips": [
+            "BIS Void mutation: Leeching Nucleus > Spitter Spines >> Adrenaline Modules.",
+            "AP Kai'Sa shown but full AD (Shojin + IE + Last Whisper) also viable.",
+            "4 Bruisers with Volibear is default frontline, but 4 Juggernauts with Shyvana caps higher.",
+            "Win Out augment is best for this comp — gets you to Level 10 immediately."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "noxus",
+      "name": "Noxus",
+      "tier": "S",
+      "description": "Empire of Noxus. Atakhan spawns LEFT — keep Shred units on left. Flexible trait web: LeBlanc+Sion, Kobuko+Darius+Swain, Sylas flex.",
+      "variants": [
+        {
+          "id": "noxus_mel_fast9",
+          "name": "Mel Fast 9",
+          "tier": "S",
+          "playstyle": "fast9",
+          "difficulty": "medium",
+          "description": "Mel + Swain as core duo. Board caps with Azir and Ryze at Level 9. Unlock LeBlanc ASAP via Sion items. Flex around Bruisers, Invokers, and Noxus.",
+          "gameplan": "Mel + Swain as core duo. Board caps with Azir and Ryze at Level 9. Unlock LeBlanc ASAP via Sion items. Flex around Bruisers, Invokers, and Noxus.",
+          "conditions": [
+            "Unlock LeBlanc ASAP by putting 2 items on Sion.",
+            "Mel DRAINS mana from enemies — do NOT put mana item on her if you want radiant item farming.",
+            "Position Mel directly opposite enemy carries.",
+            "16.6 Sylas unlock much easier — sell 2-star Jarvan + Garen + Lux."
+          ],
+          "coreUnits": [
+            "Mel",
+            "Swain",
+            "Sylas",
+            "Darius",
+            "Shyvana",
+            "LeBlanc",
+            "Ambessa",
+            "Ryze"
+          ],
+          "carryItems": {
+            "Mel": [
+              "Archangel's Staff",
+              "Rabadon's Deathcap",
+              "Cryptbloom"
+            ],
+            "Swain": [
+              "Morellonomicon",
+              "Sunfire Cape"
+            ],
+            "Sylas": [
+              "Jeweled Gauntlet",
+              "Rabadon's",
+              "Ionic Spark"
+            ],
+            "Darius": [
+              "Warmog's Armor",
+              "Gargoyle Stoneplate"
+            ],
+            "LeBlanc": [
+              "Jeweled Gauntlet",
+              "Rabadon's"
+            ],
+            "Ryze": [
+              "Shojin",
+              "Morellonomicon",
+              "Blue Buff"
+            ]
+          },
+          "levelingPattern": "Fast 9. Econ augments strongly preferred. Stabilize on 8, push 9 for Mel + Ryze.",
+          "levelingGuide": [
+            "Stage 2: Play around AP items on LeBlanc as Mel item holder. Flex Bruisers, Invokers, Noxus.",
+            "Stage 3: Maintain winstreak around LeBlanc/AP opener. Have Ambessa die with an item ASAP to unlock Mel on Level 8.",
+            "Stage 4: Roll on 8 most games to stabilize. Focus upgraded 4-cost frontline. Position Mel directly across enemy carries."
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "Stage 1-2",
+              "units": [
+                "LeBlanc",
+                "Sion",
+                "Darius",
+                "Swain"
+              ],
+              "traits": [
+                "Noxus 3"
+              ],
+              "note": "Play around AP items on LeBlanc as Mel item holder. Unlock LeBlanc via Sion 2-item."
+            },
+            "mid": {
+              "stage": "Stage 3",
+              "units": [
+                "LeBlanc",
+                "Darius",
+                "Swain",
+                "Shyvana",
+                "Sylas"
+              ],
+              "traits": [
+                "Noxus 5"
+              ],
+              "note": "Maintain winstreak. Have Ambessa die with an item to unlock Mel."
+            },
+            "late": {
+              "stage": "Stage 4+",
+              "units": [
+                "Swain",
+                "Darius",
+                "Shyvana",
+                "LeBlanc",
+                "Mel",
+                "Ryze"
+              ],
+              "traits": [
+                "Noxus 5",
+                "Bruiser 3"
+              ],
+              "note": "Mel + Swain core. Sylas unlocked. Cap with Azir and Ryze on Level 9.",
+              "positions": [
+                {
+                  "unit": "Sylas",
+                  "row": 3,
+                  "col": 0
+                },
+                {
+                  "unit": "Swain",
+                  "row": 3,
+                  "col": 1
+                },
+                {
+                  "unit": "Sand Soldier",
+                  "row": 3,
+                  "col": 2
+                },
+                {
+                  "unit": "Shyvana",
+                  "row": 3,
+                  "col": 3
+                },
+                {
+                  "unit": "Taric",
+                  "row": 3,
+                  "col": 4
+                },
+                {
+                  "unit": "Darius",
+                  "row": 3,
+                  "col": 5
+                },
+                {
+                  "unit": "Sand Soldier",
+                  "row": 3,
+                  "col": 6
+                },
+                {
+                  "unit": "Ryze",
+                  "row": 0,
+                  "col": 0
+                },
+                {
+                  "unit": "Mel",
+                  "row": 0,
+                  "col": 2
+                },
+                {
+                  "unit": "Azir",
+                  "row": 0,
+                  "col": 4
+                },
+                {
+                  "unit": "Xerath",
+                  "row": 0,
+                  "col": 6
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Econ augments",
+              "score": 5,
+              "note": "Strongly preferred for Fast 9."
+            },
+            {
+              "augment": "Combat augments",
+              "score": 4,
+              "note": "With Ambessa for unlock."
+            },
+            {
+              "augment": "Invoker augments",
+              "score": 3,
+              "note": "Flexible Invoker synergy."
+            }
+          ],
+          "augmentAvoid": [],
+          "tips": [
+            "Unlock LeBlanc ASAP by putting 2 items on Sion.",
+            "Core board: Mel + Swain + Darius + Sylas + Shyvana. Many other units flex.",
+            "Mel DRAINS mana from enemies — do NOT put mana item on her if you want radiant item farming.",
+            "In 16.6 Sylas unlock is much easier — always aim to unlock him.",
+            "Position Mel directly opposite enemy carries.",
+            "Noxus trait web very flexible: LeBlanc+Sion pair with Kobuko; Darius+Swain pair with Neeko/Sylas.",
+            "Board caps with Azir and Ryze on Level 9."
+          ]
+        },
+        {
+          "id": "noxus_kindred_fast9",
+          "name": "Kindred Noxus Fast 9",
+          "tier": "A",
+          "playstyle": "fast9",
+          "difficulty": "medium",
+          "description": "Kindred 2 + Lucian & Senna. Position Kindred and Lucian same side to nuke tanks. Skarner + Taric flex spots.",
+          "gameplan": "Kindred 2 + Lucian & Senna. Position Kindred and Lucian same side to nuke tanks. Skarner + Taric flex spots.",
+          "conditions": [
+            "Best played from winstreak with AD item slams.",
+            "Position Kindred and Lucian on same side to nuke tanks.",
+            "Gunslinger NOT important on Senna.",
+            "Avoid rolling to true zero gold."
+          ],
+          "coreUnits": [
+            "Kindred",
+            "Lucian & Senna",
+            "Draven",
+            "Skarner",
+            "Taric"
+          ],
+          "carryItems": {
+            "Kindred": [
+              "Rageblade",
+              "Last Whisper",
+              "IE"
+            ],
+            "Lucian & Senna": [
+              "Rageblade",
+              "Red Buff"
+            ],
+            "Draven": [
+              "Rageblade",
+              "Last Whisper"
+            ]
+          },
+          "levelingPattern": "Fast 9. Rageblade AD opener, push levels. Find Kindred + Lucian on 9.",
+          "levelingGuide": [
+            "Stage 2: Strong Rageblade AD opener. Pick up Bilgewater for Draven gold if possible.",
+            "Stage 3: Winstreaking: push levels. Lose streaking: roll on 7 at Stage 3-5 for Draven 2 + Bilgewater.",
+            "Stage 4: Level 9. Find Lucian & Senna and Kindred 2. Avoid entire 1-star frontline — need stall for Kindred ramp. Position Kindred/Lucian same side."
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "Stage 1-2",
+              "units": [
+                "Draven",
+                "Aphelios",
+                "Qiyana"
+              ],
+              "traits": [
+                "AD opener"
+              ],
+              "note": "Strong Rageblade AD opener. Pick up Bilgewater for Draven gold if possible."
+            },
+            "mid": {
+              "stage": "Stage 3",
+              "units": [
+                "Draven",
+                "Kindred",
+                "Skarner",
+                "Taric"
+              ],
+              "traits": [
+                "Noxus 3"
+              ],
+              "note": "Winstreaking: push levels. Lose streaking: roll on 7 for Draven 2."
+            },
+            "late": {
+              "stage": "Stage 4+",
+              "units": [
+                "Skarner",
+                "Taric",
+                "Draven",
+                "Lucian & Senna",
+                "Kindred"
+              ],
+              "traits": [
+                "Noxus 4"
+              ],
+              "note": "Level 9. Kindred 2 + Lucian & Senna online. Kindred/Lucian same side.",
+              "positions": [
+                {
+                  "unit": "Swain",
+                  "row": 3,
+                  "col": 0
+                },
+                {
+                  "unit": "Darius",
+                  "row": 3,
+                  "col": 1
+                },
+                {
+                  "unit": "Shyvana",
+                  "row": 3,
+                  "col": 2
+                },
+                {
+                  "unit": "Taric",
+                  "row": 3,
+                  "col": 3
+                },
+                {
+                  "unit": "Skarner",
+                  "row": 3,
+                  "col": 4
+                },
+                {
+                  "unit": "Sylas",
+                  "row": 3,
+                  "col": 5
+                },
+                {
+                  "unit": "Draven",
+                  "row": 0,
+                  "col": 0
+                },
+                {
+                  "unit": "Lucian & Senna",
+                  "row": 0,
+                  "col": 3
+                },
+                {
+                  "unit": "Kindred",
+                  "row": 0,
+                  "col": 5
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Econ augments",
+              "score": 5,
+              "note": "Fast 9 needs strong econ."
+            },
+            {
+              "augment": "AD combat augments",
+              "score": 4,
+              "note": "Rageblade AD opener."
+            },
+            {
+              "augment": "Bilgewater",
+              "score": 3,
+              "note": "Draven gold generation."
+            }
+          ],
+          "augmentAvoid": [],
+          "tips": [
+            "Best played from winstreak with AD item slams.",
+            "Skarner + Taric flexible — can play Wardens, Volibear + Bruiser, or Azir + Shurima.",
+            "Position Kindred and Lucian on same side to nuke tanks.",
+            "Avoid rolling to true zero gold."
+          ]
+        },
+        {
+          "id": "noxus_leblanc_atakhan",
+          "name": "LeBlanc Atakhan Noxus",
+          "tier": "B",
+          "playstyle": "reroll",
+          "difficulty": "easy",
+          "description": "Darius 3 + LeBlanc 3 + Kobuko 3. Chase 10 Noxus only with 2 Noxus emblems.",
+          "gameplan": "Darius 3 + LeBlanc 3 + Kobuko 3. Chase 10 Noxus only with 2 Noxus emblems.",
+          "conditions": [
+            "Unlock LeBlanc ASAP — 2 items on Sion.",
+            "Chase 10 Noxus only with 2 Noxus emblems.",
+            "Atakhan spawns LEFT — keep Shred units on left side.",
+            "Best chance to reach 10 is playing around Draven for gold."
+          ],
+          "coreUnits": [
+            "LeBlanc",
+            "Darius",
+            "Kobuko",
+            "Mel"
+          ],
+          "carryItems": {
+            "LeBlanc": [
+              "Jeweled Gauntlet",
+              "Rabadon's",
+              "Blue Buff"
+            ],
+            "Darius": [
+              "Sunfire",
+              "Warmog's",
+              "Sterak's"
+            ]
+          },
+          "levelingPattern": "Level 7 Reroll for LeBlanc 3 + Darius 3. Unlock Mel via Ambessa.",
+          "levelingGuide": [
+            "Stage 2: Strong openers around LeBlanc and Noxus. Slam AD melee items until Darius.",
+            "Stage 3: Level 6, play 5 Noxus ASAP. Extra Bruisers help Kobuko unlock.",
+            "Stage 4: Roll 3-star on Level 7. Unlock Mel via Ambessa. On 8, play 7 Noxus or cut to 5-costs."
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "Stage 1-2",
+              "units": [
+                "LeBlanc",
+                "Sion",
+                "Darius",
+                "Swain"
+              ],
+              "traits": [
+                "Noxus 3"
+              ],
+              "note": "Strong openers around LeBlanc and Noxus. Slam AD melee items until Darius."
+            },
+            "mid": {
+              "stage": "Stage 3",
+              "units": [
+                "LeBlanc",
+                "Darius",
+                "Kobuko",
+                "Sion",
+                "Swain"
+              ],
+              "traits": [
+                "Noxus 5"
+              ],
+              "note": "Level 6, play 5 Noxus ASAP. Extra Bruisers help Kobuko unlock."
+            },
+            "late": {
+              "stage": "Stage 4+",
+              "units": [
+                "Darius",
+                "Kobuko",
+                "Sion",
+                "LeBlanc",
+                "Swain",
+                "Mel"
+              ],
+              "traits": [
+                "Noxus 7"
+              ],
+              "note": "Roll 3-star on Level 7. Unlock Mel via Ambessa. Chase 10 Noxus only with 2 emblems.",
+              "positions": [
+                {
+                  "unit": "Darius",
+                  "row": 3,
+                  "col": 1
+                },
+                {
+                  "unit": "Kobuko & Yuumi",
+                  "row": 3,
+                  "col": 2
+                },
+                {
+                  "unit": "Swain",
+                  "row": 3,
+                  "col": 3
+                },
+                {
+                  "unit": "Sion",
+                  "row": 3,
+                  "col": 4
+                },
+                {
+                  "unit": "Briar",
+                  "row": 2,
+                  "col": 6
+                },
+                {
+                  "unit": "Atakhan",
+                  "row": 1,
+                  "col": 3
+                },
+                {
+                  "unit": "LeBlanc",
+                  "row": 0,
+                  "col": 0
+                },
+                {
+                  "unit": "Mel",
+                  "row": 0,
+                  "col": 3
+                },
+                {
+                  "unit": "Draven",
+                  "row": 0,
+                  "col": 6
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Econ augments",
+              "score": 4,
+              "note": "Cheaper path to Level 7 reroll."
+            },
+            {
+              "augment": "Combat frontline augments",
+              "score": 3,
+              "note": "Darius needs survivability."
+            }
+          ],
+          "augmentAvoid": [],
+          "tips": [
+            "Unlock LeBlanc ASAP — 2 items on Sion.",
+            "Chase 10 Noxus only with 2 Noxus emblems.",
+            "Atakhan spawns LEFT — keep Shred units on left side.",
+            "Best chance to reach 10 is playing around Draven for gold."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ionia",
+      "name": "Ionia",
+      "tier": "A",
+      "description": "Spirit Realm of Ionia. Paths change each game — 16.6 priority: Spirits > Transcendence > Blades > Enlightened > Prosperity. KEY 16.6 CHANGE: Do NOT need Yasuo 3-star to unlock Yone.",
+      "variants": [
+        {
+          "id": "ionia_yone",
+          "name": "Ionia Yone (IYoneia)",
+          "tier": "A",
+          "playstyle": "fast8",
+          "difficulty": "medium",
+          "description": "Yone 2 as primary carry. Never sell Yasuo. End game move items to Aatrox/Sylas. Cap with Sett and go Level 9.",
+          "gameplan": "Yone 2 as primary carry. Never sell Yasuo. End game move items to Aatrox/Sylas. Cap with Sett and go Level 9.",
+          "conditions": [
+            "16.6 KEY CHANGE: You do NOT need Yasuo 3-star to unlock Yone — NEVER sell Yasuo, never waste gold on 3-star.",
+            "Titan's Resolve is Yone's best item — CC immunity and both relevant stats.",
+            "Path of Spirits is best Ionia Path in 16.6.",
+            "Sett unlock: field only 1 unit in front 2 rows for 1 turn at Level 8 — very simple."
+          ],
+          "coreUnits": [
+            "Yone",
+            "Yasuo",
+            "Ahri",
+            "Kennen",
+            "Sett",
+            "Aatrox"
+          ],
+          "carryItems": {
+            "Yone": [
+              "Titan's Resolve",
+              "Bloodthirster",
+              "Rageblade"
+            ],
+            "Yasuo": [
+              "CC immunity item",
+              "DPS item"
+            ],
+            "Ahri": [
+              "Blue Buff",
+              "Rabadon's"
+            ],
+            "Aatrox": [
+              "Jeweled Gauntlet",
+              "Rabadon's"
+            ]
+          },
+          "levelingPattern": "Fast 8. Unlock Yone on 7 ASAP. Roll for Yone 2 on 8. Unlock Sett. Push 9.",
+          "levelingGuide": [
+            "Stage 2: Winstreak with Ahri and upgraded Ionia or AD Melee. If lots of econ, consider Bard. NEVER sell Yasuo.",
+            "Stage 3: Add more Ionia. Roll on 6 if key pairs available. Unlock Yone on 7 ASAP.",
+            "Stage 4: Level 8, roll for Yone 2, unlock Sett (solo front 2 rows). Try to push 9. Move items to Aatrox/Sylas."
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "Stage 1-2",
+              "units": [
+                "Ahri",
+                "Yasuo",
+                "Ionia units"
+              ],
+              "traits": [
+                "Ionia 3"
+              ],
+              "note": "Winstreak with Ahri and upgraded Ionia. NEVER sell Yasuo."
+            },
+            "mid": {
+              "stage": "Stage 3",
+              "units": [
+                "Ahri",
+                "Yasuo",
+                "Kennen",
+                "Yone"
+              ],
+              "traits": [
+                "Ionia 4"
+              ],
+              "note": "Add more Ionia. Roll on 6 if key pairs available. Unlock Yone on 7."
+            },
+            "late": {
+              "stage": "Stage 4+",
+              "units": [
+                "Yasuo",
+                "Sett",
+                "Aatrox",
+                "Yone",
+                "Ahri",
+                "Kennen"
+              ],
+              "traits": [
+                "Ionia 5",
+                "Blade Brothers"
+              ],
+              "note": "Yone 2 + Sett unlocked. Path of Spirits active. Push 9 for cap.",
+              "positions": [
+                {
+                  "unit": "Sylas",
+                  "row": 3,
+                  "col": 0
+                },
+                {
+                  "unit": "Wukong",
+                  "row": 3,
+                  "col": 1
+                },
+                {
+                  "unit": "Yone",
+                  "row": 3,
+                  "col": 2
+                },
+                {
+                  "unit": "Aatrox",
+                  "row": 3,
+                  "col": 3
+                },
+                {
+                  "unit": "Kennen",
+                  "row": 3,
+                  "col": 4
+                },
+                {
+                  "unit": "Kobuko & Yuumi",
+                  "row": 3,
+                  "col": 5
+                },
+                {
+                  "unit": "Sett",
+                  "row": 3,
+                  "col": 6
+                },
+                {
+                  "unit": "Ahri",
+                  "row": 0,
+                  "col": 0
+                },
+                {
+                  "unit": "Zilean",
+                  "row": 0,
+                  "col": 3
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Path of Spirits",
+              "score": 5,
+              "note": "Best Ionia Path in 16.6."
+            },
+            {
+              "augment": "Transcendence",
+              "score": 4,
+              "note": "Better for reroll version."
+            },
+            {
+              "augment": "Blades",
+              "score": 3,
+              "note": "Good with Yone."
+            },
+            {
+              "augment": "Enlightened",
+              "score": 2,
+              "note": "Flex option."
+            }
+          ],
+          "augmentAvoid": [],
+          "tips": [
+            "16.6 KEY CHANGE: You do NOT need Yasuo 3-star to unlock Yone. Do not waste gold.",
+            "Titan's Resolve is Yone's best item — CC immunity and both relevant stats.",
+            "Path of Spirits is best Ionia Path in 16.6.",
+            "Sett unlock: field only 1 unit in front 2 rows for 1 turn at Level 8 — very simple.",
+            "After 16.6, Transcendence better for reroll version."
+          ]
+        },
+        {
+          "id": "ionia_ahri_yone_reroll",
+          "name": "Ahri Yone Reroll",
+          "tier": "A",
+          "playstyle": "reroll",
+          "difficulty": "medium",
+          "description": "Ahri 3 + Kennen 3. Once hit, go 8 and play 7 Ionia + Neeko. Yone is a bonus unlock, not the primary target.",
+          "gameplan": "Ahri 3 + Kennen 3. Once hit, go 8 and play 7 Ionia + Neeko. Yone is a bonus unlock, not the primary target.",
+          "conditions": [
+            "3-cost reroll OR Fast 8 (Ahri 2, Kennen 2, push to 9) are both viable.",
+            "Only go for Yasuo 3 if highrolling copies AND items.",
+            "Bard is nice for comp but not needed if can't fit 7 Ionia + Neeko on 7."
+          ],
+          "coreUnits": [
+            "Ahri",
+            "Kennen",
+            "Yasuo",
+            "Yone"
+          ],
+          "carryItems": {
+            "Ahri": [
+              "Blue Buff",
+              "Rabadon's",
+              "Jeweled Gauntlet"
+            ],
+            "Kennen": [
+              "Sunfire",
+              "Warmog's"
+            ],
+            "Yone": [
+              "Titan's",
+              "Bloodthirster"
+            ]
+          },
+          "levelingPattern": "Stay on 7. Roll for Ahri 3 and Kennen 3. Once hit, go 8 and play 7 Ionia + Neeko.",
+          "levelingGuide": [
+            "Stage 2: Winstreak with Ahri and upgraded Ionia.",
+            "Stage 3: Level 7 on 3-5, roll for Ahri/Kennen/Yasuo. Stop rolling once Yone unlocked.",
+            "Stage 4: Stay on 7. Roll for Ahri 3 and Kennen 3. Once hit, go 8 and play 7 Ionia + Neeko."
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "Stage 1-2",
+              "units": [
+                "Ahri",
+                "Yasuo",
+                "Kennen"
+              ],
+              "traits": [
+                "Ionia 3"
+              ],
+              "note": "Winstreak with Ahri and upgraded Ionia."
+            },
+            "mid": {
+              "stage": "Stage 3",
+              "units": [
+                "Ahri",
+                "Yasuo",
+                "Kennen",
+                "Yone"
+              ],
+              "traits": [
+                "Ionia 4"
+              ],
+              "note": "Level 7 on 3-5, roll for Ahri/Kennen/Yasuo. Stop rolling once Yone unlocked."
+            },
+            "late": {
+              "stage": "Stage 4+",
+              "units": [
+                "Kennen",
+                "Yasuo",
+                "Ahri",
+                "Yone"
+              ],
+              "traits": [
+                "Ionia 4",
+                "Blade Brothers"
+              ],
+              "note": "Ahri 3 + Kennen 3. Go 8 and play 7 Ionia + Neeko.",
+              "positions": [
+                {
+                  "unit": "Sett",
+                  "row": 3,
+                  "col": 0
+                },
+                {
+                  "unit": "Shen",
+                  "row": 3,
+                  "col": 1
+                },
+                {
+                  "unit": "Neeko",
+                  "row": 3,
+                  "col": 2
+                },
+                {
+                  "unit": "Yasuo",
+                  "row": 3,
+                  "col": 3
+                },
+                {
+                  "unit": "Wukong",
+                  "row": 3,
+                  "col": 4
+                },
+                {
+                  "unit": "Kennen",
+                  "row": 3,
+                  "col": 5
+                },
+                {
+                  "unit": "Yone",
+                  "row": 2,
+                  "col": 6
+                },
+                {
+                  "unit": "Ahri",
+                  "row": 0,
+                  "col": 6
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Path of Spirits or Transcendence",
+              "score": 5,
+              "note": "Best Ionia paths."
+            },
+            {
+              "augment": "Reroll augments",
+              "score": 4,
+              "note": "Helps hit 3-stars faster."
+            },
+            {
+              "augment": "Bard",
+              "score": 3,
+              "note": "Nice econ if you can fit 7 Ionia + Neeko."
+            }
+          ],
+          "augmentAvoid": [],
+          "tips": [
+            "3-cost reroll OR Fast 8 (Ahri 2, Kennen 2, push to 9) are both viable.",
+            "Only go for Yasuo 3 if highrolling copies AND items.",
+            "Bard is nice for comp but not needed if can't fit 7 Ionia + Neeko on 7."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shadow_isles",
+      "name": "Shadow Isles",
+      "tier": "A",
+      "description": "The Harrowed — realm of undead and black mist. Shadow Isles builds soul stacks through combat. Kindred and Fiddlesticks are NOT Shadow Isles trait units.",
+      "variants": [
+        {
+          "id": "si_warden_kalista",
+          "name": "Warden Kalista",
+          "tier": "B",
+          "playstyle": "fast8",
+          "difficulty": "easy",
+          "description": "Kalista 2 + Viego board. Braum/warden frontline. Use most legendaries on Level 9. Only play with early Viego 2.",
+          "gameplan": "Kalista 2 + Viego board. Braum/warden frontline. Use most legendaries on Level 9. Only play with early Viego 2.",
+          "conditions": [
+            "Only play when you find early Viego 2.",
+            "Kindred and Fiddlesticks are NOT Shadow Isles — don't count them for trait.",
+            "This comp can use most legendaries on Level 9.",
+            "Beginner-friendly."
+          ],
+          "coreUnits": [
+            "Kalista",
+            "Viego",
+            "Braum",
+            "Thresh"
+          ],
+          "carryItems": {
+            "Kalista": [
+              "Rageblade",
+              "Last Whisper",
+              "Titan's Resolve"
+            ],
+            "Viego": [
+              "Bloodthirster",
+              "Sterak's Gage"
+            ],
+            "Braum": [
+              "Gargoyle Stoneplate",
+              "Warmog's"
+            ]
+          },
+          "levelingPattern": "Fast 8. Find Kalista 2 and Braum 2. Go 9 for legendaries.",
+          "levelingGuide": [
+            "Stage 2: Farm souls with Shadow Isles. Play around Viego as early carry.",
+            "Stage 3: Level to 7-8, stabilize with Shadow Isles frontline.",
+            "Stage 4: Fast 8 at 4-2. Find Kalista 2, Braum 2, go 9 for legendaries."
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "Stage 1-2",
+              "units": [
+                "Viego",
+                "Braum"
+              ],
+              "traits": [
+                "Shadow Isles 2"
+              ],
+              "note": "Farm souls with Shadow Isles. Play around Viego as early carry."
+            },
+            "mid": {
+              "stage": "Stage 3",
+              "units": [
+                "Kalista",
+                "Viego",
+                "Braum",
+                "Thresh"
+              ],
+              "traits": [
+                "Shadow Isles 4",
+                "Warden 2"
+              ],
+              "note": "Level to 7-8, stabilize with Shadow Isles frontline."
+            },
+            "late": {
+              "stage": "Stage 4+",
+              "units": [
+                "Braum",
+                "Thresh",
+                "Viego",
+                "Kalista"
+              ],
+              "traits": [
+                "Shadow Isles 4",
+                "Warden 3"
+              ],
+              "note": "Kalista 2 + Viego online. Braum/Thresh frontline. Go 9 for legendaries.",
+              "positions": [
+                {
+                  "unit": "Ornn",
+                  "row": 3,
+                  "col": 0
+                },
+                {
+                  "unit": "Yorick",
+                  "row": 3,
+                  "col": 1
+                },
+                {
+                  "unit": "Thresh",
+                  "row": 3,
+                  "col": 2
+                },
+                {
+                  "unit": "Loris",
+                  "row": 3,
+                  "col": 3
+                },
+                {
+                  "unit": "Braum",
+                  "row": 3,
+                  "col": 4
+                },
+                {
+                  "unit": "Fiddlesticks",
+                  "row": 2,
+                  "col": 3
+                },
+                {
+                  "unit": "Gwen",
+                  "row": 1,
+                  "col": 0
+                },
+                {
+                  "unit": "Seraphine",
+                  "row": 0,
+                  "col": 0
+                },
+                {
+                  "unit": "Kalista",
+                  "row": 0,
+                  "col": 6
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Combat augments",
+              "score": 4,
+              "note": "Soul stack generation."
+            }
+          ],
+          "augmentAvoid": [],
+          "tips": [
+            "Only play when you find early Viego 2.",
+            "Kindred and Fiddlesticks are NOT Shadow Isles — don't count them for trait.",
+            "This comp can use most legendaries on Level 9.",
+            "Beginner-friendly."
+          ]
+        },
+        {
+          "id": "si_viego_ruined_king",
+          "name": "Viego, The Ruined King",
+          "tier": "X",
+          "playstyle": "1-Cost Reroll",
+          "difficulty": "Easy",
+          "description": "Reroll for Viego 3-star using his Hero Augment. Rush 100 souls to unlock his ability, then winstreak into a Shadow Isles Warden board.",
+          "gameplan": "ONLY play this comp if you have the Viego Hero Augment. Slow roll at level 4 for Viego 3-star, prioritizing souls generation. Once Viego 3 is hit, push levels and complete the Shadow Isles Warden backline.",
+          "conditions": [
+            "Have the Viego Hero Augment (The Ruined King) — REQUIRED",
+            "Have early Viego copies before clicking the augment",
+            "Prefer winstreak early to farm souls faster"
+          ],
+          "coreUnits": [
+            "Viego",
+            "Yorick",
+            "Gwen",
+            "Loris",
+            "Seraphine",
+            "Kalista",
+            "Kindred",
+            "Thresh"
+          ],
+          "carryItems": {
+            "Viego": [
+              "Bloodthirster",
+              "Runaan's Hurricane",
+              "Hand of Justice"
+            ],
+            "Kalista": [
+              "Last Whisper"
+            ]
+          },
+          "levelingPattern": "Slow roll at 4 → push to 7 after Viego 3 → 8 for Shadow Isles 5",
+          "levelingGuide": [
+            "Stage 1-2: Win-streak, pick up every Viego you see",
+            "Stage 2: Stay level 4, slow roll for Viego 3-star",
+            "After Viego 3: Push to level 7 and add Warden/Shadow Isles units",
+            "Level 8: Complete Shadow Isles 5 + Warden 3",
+            "Late: Cap with Kindred and flex units (Renekton, Azir, Ornn)"
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "1-1 to 2-5",
+              "units": [
+                "Viego",
+                "Bard",
+                "Twisted Fate",
+                "Yorick"
+              ],
+              "traits": [
+                "Shadow Isles 2"
+              ],
+              "note": "Slow roll at level 4 for Viego 3-star. Win-streak to farm souls faster."
+            },
+            "mid": {
+              "stage": "3-1 to 4-5",
+              "units": [
+                "Viego",
+                "Yorick",
+                "Gwen",
+                "Loris",
+                "Kalista",
+                "Thresh"
+              ],
+              "traits": [
+                "Shadow Isles 4",
+                "Warden 2"
+              ],
+              "note": "After Viego 3-star, push levels. Add Shadow Isles and Warden units."
+            },
+            "late": {
+              "stage": "5-1+",
+              "units": [
+                "Viego",
+                "Yorick",
+                "Gwen",
+                "Loris",
+                "Seraphine",
+                "Kalista",
+                "Kindred",
+                "Thresh"
+              ],
+              "traits": [
+                "Shadow Isles 5",
+                "Warden 3",
+                "Quickstriker 2",
+                "Bruiser 2",
+                "Disruptor 2"
+              ],
+              "note": "Full board. Viego flanks right, Seraphine and Kindred anchor backline.",
+              "positions": [
+                {
+                  "unit": "Yorick",
+                  "row": 3,
+                  "col": 2,
+                  "cost": 1
+                },
+                {
+                  "unit": "Thresh",
+                  "row": 3,
+                  "col": 3,
+                  "cost": 2
+                },
+                {
+                  "unit": "Loris",
+                  "row": 3,
+                  "col": 4,
+                  "cost": 1
+                },
+                {
+                  "unit": "Gwen",
+                  "row": 2,
+                  "col": 2,
+                  "cost": 3
+                },
+                {
+                  "unit": "Viego",
+                  "row": 2,
+                  "col": 6,
+                  "cost": 1
+                },
+                {
+                  "unit": "Seraphine",
+                  "row": 0,
+                  "col": 2,
+                  "cost": 3
+                },
+                {
+                  "unit": "Kindred",
+                  "row": 0,
+                  "col": 4,
+                  "cost": 3
+                },
+                {
+                  "unit": "Kalista",
+                  "row": 0,
+                  "col": 6,
+                  "cost": 3
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Viego Hero Augment (The Ruined King)",
+              "score": 10,
+              "note": "REQUIRED — do not play this comp without it"
+            },
+            {
+              "augment": "Death's Defiance",
+              "score": 8,
+              "note": "Strong sustain augment for Viego"
+            },
+            {
+              "augment": "Gold Collector",
+              "score": 7,
+              "note": "Souls generation — winstreak for fast unlock"
+            },
+            {
+              "augment": "Pandora's Box",
+              "score": 6,
+              "note": "Item randomizer — flexible into this line"
+            },
+            {
+              "augment": "Artifact Anvil",
+              "score": 5,
+              "note": "Choose an artifact for Viego"
+            },
+            {
+              "augment": "Tome of Traits",
+              "score": 4,
+              "note": "Can hit Shadow Isles or Warden emblem"
+            }
+          ],
+          "augmentAvoid": [
+            {
+              "augment": "Fast 9 econ augments",
+              "note": "This is a reroll comp — econ augments don't fit the gameplan"
+            },
+            {
+              "augment": "Stationary Force",
+              "note": "Viego is mobile; this augment doesn't synergize"
+            }
+          ],
+          "tips": [
+            "ONLY play this comp if you have the Viego Hero Augment — do not play it without it",
+            "Play when you have early Viego copies already BEFORE clicking the augment",
+            "Slot in any Quickstriker unit until you find Kindred",
+            "Rush 100 souls ASAP to unlock Viego's ability",
+            "Winstreak early to farm souls faster — consider rolling to unlock Bard early for resource generation",
+            "Slow roll for Viego 3-star and focus on getting his BIS items first",
+            "Once you hit Viego 3, push levels and add more Shadow Isles and Wardens",
+            "Late game: drop 5 Shadow Isles for higher value units",
+            "Cap with Kindred Wardens or pivot into Mel Noxus if ahead",
+            "Main tank (Loris/Thresh) should always be adjacent to Viego"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ixtal",
+      "name": "Ixtal",
+      "tier": "A",
+      "description": "Hidden jungle nation — Ixtal quests reward Sunshards. 500 cumulative Sunshards unlocks Brock (7-cost). Ixtal Ryze is one of the highest caps in the game — gains every region spell.",
+      "variants": [
+        {
+          "id": "ixtal_sandy_brock",
+          "name": "Sandy Brock (Ixtal Fast 9)",
+          "tier": "A",
+          "playstyle": "fast9",
+          "difficulty": "hard",
+          "description": "Complete Ixtal quests for Sunshards/cashouts, flex into strongest board post-cashout. Ixtal Ryze is one of the highest caps in the game — Ixtal trait gives every single region spell.",
+          "gameplan": "Complete Ixtal quests for Sunshards/cashouts, flex into strongest board post-cashout. Ixtal Ryze is one of the highest caps in the game — Ixtal trait gives every single region spell.",
+          "conditions": [
+            "Requires Ixtal Expeditionist augment — only play from spots where you have Ixtal on 2-1.",
+            "Brock is often bait — only chase if VERY far ahead with Sunshards.",
+            "Nidalee unlock: 2-star Neeko with 3 items at Level 7.",
+            "Skarner unlock: field a Marksman or Caster with a Chain Vest at Level 7."
+          ],
+          "coreUnits": [
+            "Neeko",
+            "Nidalee",
+            "Skarner",
+            "Brock"
+          ],
+          "carryItems": {
+            "Neeko": [
+              "Gargoyle Stoneplate"
+            ],
+            "Nidalee": [
+              "Titan's",
+              "Bloodthirster"
+            ],
+            "Skarner": [
+              "Gargoyle",
+              "Warmog's"
+            ]
+          },
+          "levelingPattern": "Risky Fast 9. Only play with Ixtal Expeditionist. Complete quests for Sunshards.",
+          "levelingGuide": [
+            "Stage 2: Play around Neeko and AP item holders. Orianna and Ahri strong early. No need to rush 3 Ixtal since Brock is rarely hit.",
+            "Stage 3: If winstreaking: level to 7 early, unlock Nidalee and Skarner. Tech in 3 Ixtal and begin questing.",
+            "Stage 4: Roll for Nidalee 2, Skarner 2, preferred AP duo. Once stable, go 9 for 5-costs. Cap with Sylas."
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "Stage 1-2",
+              "units": [
+                "Neeko",
+                "Ahri",
+                "Orianna"
+              ],
+              "traits": [
+                "Ixtal 2"
+              ],
+              "note": "Play around Neeko and AP item holders. Orianna and Ahri strong early."
+            },
+            "mid": {
+              "stage": "Stage 3",
+              "units": [
+                "Neeko",
+                "Nidalee",
+                "Skarner",
+                "Ahri",
+                "Orianna"
+              ],
+              "traits": [
+                "Ixtal 3"
+              ],
+              "note": "Level to 7, unlock Nidalee and Skarner. Tech in 3 Ixtal and begin questing."
+            },
+            "late": {
+              "stage": "Stage 4+",
+              "units": [
+                "Neeko",
+                "Nidalee",
+                "Skarner",
+                "Azir"
+              ],
+              "traits": [
+                "Ixtal 3",
+                "Huntress"
+              ],
+              "note": "Nidalee 2 + Skarner 2. Quest for Sunshards. Cap with Sylas/Ryze on 9.",
+              "positions": [
+                {
+                  "unit": "Skarner",
+                  "row": 3,
+                  "col": 0
+                },
+                {
+                  "unit": "Brock",
+                  "row": 3,
+                  "col": 1
+                },
+                {
+                  "unit": "Sand Soldier",
+                  "row": 3,
+                  "col": 2
+                },
+                {
+                  "unit": "Renekton",
+                  "row": 3,
+                  "col": 3
+                },
+                {
+                  "unit": "Neeko",
+                  "row": 3,
+                  "col": 4
+                },
+                {
+                  "unit": "Sylas",
+                  "row": 3,
+                  "col": 5
+                },
+                {
+                  "unit": "Sand Soldier",
+                  "row": 3,
+                  "col": 6
+                },
+                {
+                  "unit": "Fiddlesticks",
+                  "row": 2,
+                  "col": 3
+                },
+                {
+                  "unit": "Ryze",
+                  "row": 0,
+                  "col": 0
+                },
+                {
+                  "unit": "Seraphine",
+                  "row": 0,
+                  "col": 3
+                },
+                {
+                  "unit": "Azir",
+                  "row": 0,
+                  "col": 6
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Ixtal Expeditionist",
+              "score": 5,
+              "note": "Required — only play with this augment."
+            },
+            {
+              "augment": "Econ augments",
+              "score": 4,
+              "note": "Need econ for Fast 9."
+            }
+          ],
+          "augmentAvoid": [],
+          "tips": [
+            "Brock is often bait — only chase if VERY far ahead with Sunshards.",
+            "EXPERIMENTAL: Trap Neeko in a corner for max Nidalee Huntress passive uptime.",
+            "Backline AP fully flexible: Disruptor Mel / Azir / Seraphine / Invoker Zilean + Freljord / Ryze.",
+            "Sunshards accumulate across ALL cashouts — don't need 500 in one run.",
+            "Ixtal Ryze extremely powerful — gains every region spell.",
+            "Generally only play from spots where you have Ixtal on 2-1.",
+            "Have at least 1 Chain item by Level 7 for Skarner unlock."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shurima",
+      "name": "Shurima",
+      "tier": "S",
+      "description": "Desert empire reborn — Shurima rewards winning combats with Azir (rolling for loot). Sylas unlock in 16.6: sell 2-star Jarvan + 2-star Garen + 2-star Lux — made MUCH EASIER this patch.",
+      "variants": [
+        {
+          "id": "shurima_arcanist_annie",
+          "name": "Arcanist Annie Sylas",
+          "tier": "S",
+          "playstyle": "fast9",
+          "difficulty": "hard",
+          "description": "Annie 2 + Tibbers + Sylas 2 on Level 9. Annie burns/wounds the entire battlefield. Sylas rotates Jarvan/Garen/Lux spells. Unlock Sylas by selling 2-star Jarvan + 2-star Garen + 2-star Lux.",
+          "gameplan": "Annie 2 + Tibbers + Sylas 2 on Level 9. Annie burns/wounds the entire battlefield. Sylas rotates Jarvan/Garen/Lux spells. Unlock Sylas by selling 2-star Jarvan + 2-star Garen + 2-star Lux.",
+          "conditions": [
+            "Sylas unlock: sell 2-star Jarvan + 2-star Garen + 2-star Lux. 16.6 made this much easier.",
+            "Annie MUST have minimum 2 mana items — she needs to get her first cast off.",
+            "Tibbers is incredibly tanky — worth full itemization.",
+            "Best from Yordle opener — 6 Yordle rolls/gold help hit Jarvan/Garen/Lux 2-stars.",
+            "NOT a comp for every game — requires ton of gold and econ augments."
+          ],
+          "coreUnits": [
+            "Annie",
+            "Tibbers",
+            "Sylas",
+            "Swain",
+            "Lucian & Senna"
+          ],
+          "carryItems": {
+            "Annie": [
+              "Blue Buff",
+              "Shojin",
+              "Rabadon's"
+            ],
+            "Tibbers": [
+              "Warmog's Armor",
+              "Gargoyle Stoneplate"
+            ],
+            "Sylas": [
+              "Jeweled Gauntlet",
+              "Rabadon's",
+              "Ionic Spark"
+            ]
+          },
+          "levelingPattern": "Fast 9. Best from Yordle opener. Hold Jarvan/Garen/Lux 2-stars for Sylas unlock.",
+          "levelingGuide": [
+            "Stage 2: Winstreak AP opener — Demacia preferred but any Invoker start works. Slam mana items for Annie later.",
+            "Stage 3: Econ heavily. Play around 3-cost carries: Ahri, LeBlanc, Zoe. If winstreaking, can trade HP end of Stage 3-4 to reach 9.",
+            "Stage 4: Unlock Galio on 8 (8 Demacia star levels). Level 9 and unlock Sylas. Prioritize strong upgraded tank until Tibbers 2 online."
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "Stage 1-2",
+              "units": [
+                "Jarvan IV",
+                "Garen",
+                "Lux",
+                "Ahri"
+              ],
+              "traits": [
+                "Demacia 3",
+                "Arcanist 2"
+              ],
+              "note": "Winstreak AP opener — Demacia preferred. Slam mana items for Annie. Hold Jarvan/Garen/Lux for Sylas unlock."
+            },
+            "mid": {
+              "stage": "Stage 3",
+              "units": [
+                "Annie",
+                "Swain",
+                "Jarvan IV",
+                "Garen",
+                "Lux"
+              ],
+              "traits": [
+                "Arcanist 3"
+              ],
+              "note": "Econ heavily. Play around 3-cost carries. Hold Jarvan/Garen/Lux 2-stars."
+            },
+            "late": {
+              "stage": "Stage 4+",
+              "units": [
+                "Tibbers",
+                "Swain",
+                "Annie",
+                "Sylas",
+                "Lucian & Senna"
+              ],
+              "traits": [
+                "Arcanist 4",
+                "Shurima 3"
+              ],
+              "note": "Annie 2 + Tibbers + Sylas unlocked. Annie burns/wounds entire battlefield.",
+              "positions": [
+                {
+                  "unit": "Taric",
+                  "row": 3,
+                  "col": 0
+                },
+                {
+                  "unit": "Garen",
+                  "row": 3,
+                  "col": 1
+                },
+                {
+                  "unit": "Swain",
+                  "row": 3,
+                  "col": 2
+                },
+                {
+                  "unit": "Sylas",
+                  "row": 3,
+                  "col": 3
+                },
+                {
+                  "unit": "Neeko",
+                  "row": 3,
+                  "col": 4
+                },
+                {
+                  "unit": "Tibbers",
+                  "row": 3,
+                  "col": 5
+                },
+                {
+                  "unit": "Shyvana",
+                  "row": 3,
+                  "col": 6
+                },
+                {
+                  "unit": "Galio",
+                  "row": 2,
+                  "col": 3
+                },
+                {
+                  "unit": "Annie",
+                  "row": 0,
+                  "col": 2
+                },
+                {
+                  "unit": "Sylas",
+                  "row": 0,
+                  "col": 4
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Aura Farming",
+              "score": 5,
+              "note": "Best augment — specifically for Annie."
+            },
+            {
+              "augment": "Econ augments",
+              "score": 4,
+              "note": "Yordle opener needs econ."
+            }
+          ],
+          "augmentAvoid": [],
+          "tips": [
+            "Sylas unlock: sell 2-star Jarvan + 2-star Garen + 2-star Lux. 16.6 made this much easier.",
+            "Annie MUST have minimum 2 mana items — she needs to get her first cast off.",
+            "Tibbers is incredibly tanky — worth full itemization.",
+            "Best from Yordle opener — 6 Yordle rolls/gold help hit Jarvan/Garen/Lux 2-stars.",
+            "NOT a comp for every game — requires ton of gold and econ augments.",
+            "Without Annie comp is very difficult — she is both frontline AND backline.",
+            "Lucian slot flexible: Taric, Skarner, Fiddlesticks all viable."
+          ]
+        },
+        {
+          "id": "shurima_demacia_ryze_sett",
+          "name": "Demacia Ryze Sett",
+          "tier": "A",
+          "playstyle": "fast9",
+          "difficulty": "hard",
+          "description": "Level 9 Ryze + Sett. Unlock Galio from Demacia opener. Shurima Ryze buff: CCs and drops loot. Board caps with Xerath/Azir for Shurima trait.",
+          "gameplan": "Level 9 Ryze + Sett. Unlock Galio from Demacia opener. Shurima Ryze buff: CCs and drops loot. Board caps with Xerath/Azir for Shurima trait.",
+          "conditions": [
+            "Ryze needs 3 region traits at Level 9. Galio needs 8 Demacia star levels at Level 8.",
+            "Shurima Ryze is best Ryze buff — CCs and drops loot.",
+            "Almost every good Ryze board uses Kobuko + Kennen package.",
+            "Sett unlock: field only 1 unit in front 2 rows for 1 turn at Level 8.",
+            "Volibear unlock: field a unit with 3400+ HP at Level 8.",
+            "Ideally play from early Demacia winstreak or Ionia Ahri AP start."
+          ],
+          "coreUnits": [
+            "Ryze",
+            "Sett",
+            "Poppy",
+            "Xin Zhao",
+            "Kennen",
+            "Sylas",
+            "Galio",
+            "Kobuko"
+          ],
+          "carryItems": {
+            "Ryze": [
+              "Shojin",
+              "Morellonomicon",
+              "Blue Buff"
+            ],
+            "Sett": [
+              "Titan's",
+              "Sterak's",
+              "Bloodthirster"
+            ],
+            "Poppy": [
+              "Gargoyle",
+              "Warmog's"
+            ],
+            "Sylas": [
+              "Jeweled Gauntlet",
+              "Rabadon's"
+            ]
+          },
+          "levelingPattern": "Fast 9. Demacia AP opener or Ionia Ahri AP start. Galio on 8 (8 Demacia star levels). Ryze on 9.",
+          "levelingGuide": [
+            "Stage 2: Strong AP opener. Econ generating Ionia paths if possible. Can also play from Ionia Ahri + AP items.",
+            "Stage 3: Unlock Kennen and Kobuko. Aggressively hold Demacian star levels for Galio unlock.",
+            "Stage 4: Fast 8 at 4-2, unlock Galio (8 Demacia star levels). Stabilize around 5 Demacia, go 9 for Ryze. Unlock Volibear, Sett, Galio this stage."
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "Stage 1-2",
+              "units": [
+                "Ahri",
+                "Ionia",
+                "Demacia opener"
+              ],
+              "traits": [
+                "Demacia 3"
+              ],
+              "note": "Strong AP opener. Econ generating Ionia paths if possible."
+            },
+            "mid": {
+              "stage": "Stage 3",
+              "units": [
+                "Poppy",
+                "Xin Zhao",
+                "Kennen",
+                "Kobuko",
+                "Sylas"
+              ],
+              "traits": [
+                "Demacia 5"
+              ],
+              "note": "Unlock Kennen and Kobuko. Aggressively hold Demacian star levels for Galio unlock."
+            },
+            "late": {
+              "stage": "Stage 4+",
+              "units": [
+                "Poppy",
+                "Xin Zhao",
+                "Kobuko",
+                "Sett",
+                "Ryze",
+                "Sylas"
+              ],
+              "traits": [
+                "Demacia 5",
+                "Shurima 3"
+              ],
+              "note": "Galio on bench (8 Demacia star levels). Ryze on 9. Shurima Ryze buff active.",
+              "positions": [
+                {
+                  "unit": "Sett",
+                  "row": 3,
+                  "col": 0
+                },
+                {
+                  "unit": "Sand Soldier",
+                  "row": 3,
+                  "col": 1
+                },
+                {
+                  "unit": "Xin Zhao",
+                  "row": 3,
+                  "col": 2
+                },
+                {
+                  "unit": "Kennen",
+                  "row": 3,
+                  "col": 3
+                },
+                {
+                  "unit": "Sand Soldier",
+                  "row": 3,
+                  "col": 4
+                },
+                {
+                  "unit": "Taric",
+                  "row": 3,
+                  "col": 5
+                },
+                {
+                  "unit": "Sylas",
+                  "row": 3,
+                  "col": 6
+                },
+                {
+                  "unit": "Galio",
+                  "row": 2,
+                  "col": 3
+                },
+                {
+                  "unit": "Azir",
+                  "row": 0,
+                  "col": 0
+                },
+                {
+                  "unit": "Xerath",
+                  "row": 0,
+                  "col": 2
+                },
+                {
+                  "unit": "Lux",
+                  "row": 0,
+                  "col": 4
+                },
+                {
+                  "unit": "Ryze",
+                  "row": 0,
+                  "col": 6
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Econ augments",
+              "score": 5,
+              "note": "Need to reach Level 9."
+            },
+            {
+              "augment": "Invoker Ryze emblem",
+              "score": 5,
+              "note": "Best spatula for Ryze."
+            },
+            {
+              "augment": "AP combat augments",
+              "score": 4,
+              "note": "Ryze/Sylas damage boost."
+            },
+            {
+              "augment": "Disruptor emblem",
+              "score": 4,
+              "note": "Great on Ryze or Sylas."
+            }
+          ],
+          "augmentAvoid": [],
+          "tips": [
+            "16.6 Kennen/Galio unlock conditions changed — much easier now.",
+            "Ryze needs 3 region traits at Level 9. Galio needs 8 Demacia star levels at Level 8.",
+            "Shurima Ryze is best Ryze buff — CCs and drops loot.",
+            "Almost every good Ryze board uses Kobuko + Kennen package.",
+            "Sett unlock: field only 1 unit in front 2 rows for 1 turn at Level 8.",
+            "Volibear unlock: field a unit with 3400+ HP at Level 8.",
+            "Ideally play from early Demacia winstreak or Ionia Ahri AP start."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "freljord",
+      "name": "Freljord",
+      "tier": "B",
+      "description": "The Frozen North. CRITICAL: Tower spawns center Row 2. Tanks IN FRONT of tower get Health bonus. Units BEHIND tower get Damage Amp — put Volibear there. Volibear unlock: field 3800+ HP unit at Level 8.",
+      "variants": [
+        {
+          "id": "freljord_lissandraphine",
+          "name": "Freljord Invokers / LiSserafine",
+          "tier": "B",
+          "playstyle": "fast9",
+          "difficulty": "medium",
+          "description": "Lissandra + Seraphine AP dual carry. Volibear behind tower for Damage Amp. Cap with Ryze and Invoker augments. Look for Invoker Seraphine or Disruptor Lissandra emblem.",
+          "gameplan": "Lissandra + Seraphine AP dual carry. Volibear behind tower for Damage Amp. Cap with Ryze and Invoker augments. Look for Invoker Seraphine or Disruptor Lissandra emblem.",
+          "conditions": [
+            "TOWER POSITIONING CRITICAL: Braum IN FRONT of tower (Row 1) for Health. Volibear BEHIND tower (Row 2 back) for Damage Amp.",
+            "Prioritize Seraphine over Lissandra for items.",
+            "Need at least 1 item augment to find success.",
+            "Voli 2 > Renek 2 > Voli 1 > Renek 1, unless 3 Shurima (then Renek 2 > Voli 2).",
+            "Invoker Seraphine or Disruptor Lissandra emblem are premium spatula targets."
+          ],
+          "coreUnits": [
+            "Seraphine",
+            "Lissandra",
+            "Braum",
+            "Volibear",
+            "Sejuani"
+          ],
+          "carryItems": {
+            "Seraphine": [
+              "Shojin",
+              "Archangel's Staff",
+              "Rabadon's"
+            ],
+            "Lissandra": [
+              "Blue Buff",
+              "Morello"
+            ],
+            "Braum": [
+              "Gargoyle Stoneplate",
+              "Warmog's"
+            ],
+            "Volibear": [
+              "Sunfire Cape",
+              "Warmog's"
+            ]
+          },
+          "levelingPattern": "Fast 9. AP opener. At least 1 item augment required. Get to Level 9 for Ryze. Belts for Volibear unlock.",
+          "levelingGuide": [
+            "Stage 2: AP opener, slam AP/mana items on Seraphine/Lissandra.",
+            "Stage 3: Continue tempo. Take item augments. Find belts for Volibear unlock (3800 HP).",
+            "Stage 4: Get to Level 9. Unlock Ryze. Volibear behind tower, Braum in front."
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "Stage 1-2",
+              "units": [
+                "Anivia",
+                "Sona",
+                "LeBlanc"
+              ],
+              "traits": [
+                "Freljord 2"
+              ],
+              "note": "AP opener, slam AP/mana items on Seraphine/Lissandra."
+            },
+            "mid": {
+              "stage": "Stage 3",
+              "units": [
+                "Braum",
+                "Sejuani",
+                "Lissandra",
+                "Seraphine"
+              ],
+              "traits": [
+                "Freljord 4"
+              ],
+              "note": "Continue tempo. Take item augments. Find belts for Volibear unlock (3800 HP)."
+            },
+            "late": {
+              "stage": "Stage 4+",
+              "units": [
+                "Braum",
+                "Sejuani",
+                "Volibear",
+                "Lissandra",
+                "Seraphine",
+                "Ryze"
+              ],
+              "traits": [
+                "Freljord 5",
+                "Invoker 2"
+              ],
+              "note": "CRITICAL: Braum IN FRONT of tower (Row 3). Volibear BEHIND tower (Row 2). Seraphine/Lissandra backline.",
+              "positions": [
+                {
+                  "unit": "Sand Soldier",
+                  "row": 3,
+                  "col": 0
+                },
+                {
+                  "unit": "Sand Soldier",
+                  "row": 3,
+                  "col": 1
+                },
+                {
+                  "unit": "Sejuani",
+                  "row": 3,
+                  "col": 3
+                },
+                {
+                  "unit": "Braum",
+                  "row": 3,
+                  "col": 4
+                },
+                {
+                  "unit": "Loris",
+                  "row": 2,
+                  "col": 1
+                },
+                {
+                  "unit": "Frozen Tower",
+                  "row": 2,
+                  "col": 2
+                },
+                {
+                  "unit": "Vi",
+                  "row": 1,
+                  "col": 3
+                },
+                {
+                  "unit": "Renekton",
+                  "row": 1,
+                  "col": 4
+                },
+                {
+                  "unit": "Azir",
+                  "row": 0,
+                  "col": 0
+                },
+                {
+                  "unit": "Orianna",
+                  "row": 0,
+                  "col": 2
+                },
+                {
+                  "unit": "Lissandra",
+                  "row": 0,
+                  "col": 4
+                },
+                {
+                  "unit": "Seraphine",
+                  "row": 0,
+                  "col": 6
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Invoker augments",
+              "score": 5,
+              "note": "Core synergy."
+            },
+            {
+              "augment": "Disruptor augments",
+              "score": 4,
+              "note": "Great on Lissandra."
+            },
+            {
+              "augment": "Item augments",
+              "score": 4,
+              "note": "At least 1 required for success."
+            }
+          ],
+          "augmentAvoid": [],
+          "tips": [
+            "TOWER POSITIONING CRITICAL: Braum IN FRONT of tower (Row 1) for Health. Volibear BEHIND tower (Row 2 back) for Damage Amp.",
+            "Prioritize Seraphine over Lissandra for items.",
+            "Need at least 1 item augment to find success.",
+            "Voli 2 > Renek 2 > Voli 1 > Renek 1, unless 3 Shurima (then Renek 2 > Voli 2).",
+            "Invoker Seraphine or Disruptor Lissandra emblem are premium spatula targets."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demacia",
+      "name": "Demacia",
+      "tier": "B",
+      "description": "Kingdom of Demacia. Galio unlocked via 8 Demacia star levels at Level 8 — contributes from bench without taking a unit slot (10 total units). 16.6 made Kennen/Galio unlock much easier.",
+      "variants": [
+        {
+          "id": "demacia_lux",
+          "name": "Demacia Lux AP Invoker",
+          "tier": "B",
+          "playstyle": "fast8",
+          "difficulty": "easy",
+          "description": "Lux as primary carry + AP Invoker duo (Orianna → Lissandra → Zilean). Garen full tank. Galio unlocked on 8. Go 9 for Zilean/5-costs.",
+          "gameplan": "Lux as primary carry + AP Invoker duo (Orianna → Lissandra → Zilean). Garen full tank. Galio unlocked on 8. Go 9 for Zilean/5-costs.",
+          "conditions": [
+            "Lux primary carry — look for Invoker duo: Orianna → Lissandra → Zilean.",
+            "Garen TRUE tank items only — no Sunfire/Spark on Garen.",
+            "Galio contributes Demacia from bench — doesn't take a unit slot (10 total units).",
+            "Beginner-friendly comp."
+          ],
+          "coreUnits": [
+            "Lux",
+            "Garen",
+            "Jarvan IV",
+            "Xin Zhao",
+            "Orianna",
+            "Lissandra",
+            "Zilean",
+            "Galio"
+          ],
+          "carryItems": {
+            "Lux": [
+              "Blue Buff",
+              "Shojin",
+              "Rabadon's"
+            ],
+            "Garen": [
+              "Gargoyle Stoneplate",
+              "Warmog's Armor",
+              "Sunfire Cape"
+            ],
+            "Orianna": [
+              "Blue Buff"
+            ]
+          },
+          "levelingPattern": "Fast 8. Galio on 8 (8 Demacia star levels). Go 9 for Zilean/5-costs.",
+          "levelingGuide": [
+            "Stage 2: Winstreak around upgraded Demacia. Poppy 1 with Juggernaut > Jarvan 2 is great early.",
+            "Stage 3: Add more Demacians. Most common: 5 Demacia + 2 Invoker. Look for Piltover with Orianna + Vi.",
+            "Stage 4: Fast 8 at 4-2. Unlock Galio ASAP (8 Demacia star levels). Do not finish rolling until Galio + upgraded frontline. Once stable, go 9 for Zilean/5-costs."
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "Stage 1-2",
+              "units": [
+                "Sona",
+                "Jarvan IV",
+                "Vayne"
+              ],
+              "traits": [
+                "Demacia 3"
+              ],
+              "note": "Winstreak around upgraded Demacia. Poppy 1 with Juggernaut > Jarvan 2 great early."
+            },
+            "mid": {
+              "stage": "Stage 3",
+              "units": [
+                "Garen",
+                "Jarvan IV",
+                "Xin Zhao",
+                "Orianna",
+                "Lux"
+              ],
+              "traits": [
+                "Demacia 5",
+                "Invoker 2"
+              ],
+              "note": "5 Demacia + 2 Invoker. Look for Piltover synergy with Orianna + Vi."
+            },
+            "late": {
+              "stage": "Stage 4+",
+              "units": [
+                "Garen",
+                "Jarvan IV",
+                "Xin Zhao",
+                "Poppy",
+                "Lux",
+                "Orianna",
+                "Lissandra",
+                "Zilean"
+              ],
+              "traits": [
+                "Demacia 7",
+                "Invoker 2"
+              ],
+              "note": "Galio on bench (8 Demacia star levels) — 10 total units. Go 9 for Zilean/5-costs.",
+              "positions": [
+                {
+                  "unit": "Garen",
+                  "row": 3,
+                  "col": 1
+                },
+                {
+                  "unit": "Jarvan IV",
+                  "row": 3,
+                  "col": 2
+                },
+                {
+                  "unit": "Swain",
+                  "row": 3,
+                  "col": 3
+                },
+                {
+                  "unit": "Poppy",
+                  "row": 3,
+                  "col": 4
+                },
+                {
+                  "unit": "Xin Zhao",
+                  "row": 3,
+                  "col": 5
+                },
+                {
+                  "unit": "Galio",
+                  "row": 2,
+                  "col": 3
+                },
+                {
+                  "unit": "Lux",
+                  "row": 0,
+                  "col": 0
+                },
+                {
+                  "unit": "Zilean",
+                  "row": 0,
+                  "col": 3
+                },
+                {
+                  "unit": "Sona",
+                  "row": 0,
+                  "col": 6
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Living Forge Demacia",
+              "score": 5,
+              "note": "Core Demacia augment."
+            },
+            {
+              "augment": "Econ augments",
+              "score": 4,
+              "note": "Fast 8 econ."
+            },
+            {
+              "augment": "AP combat augments",
+              "score": 3,
+              "note": "Lux damage."
+            }
+          ],
+          "augmentAvoid": [],
+          "tips": [
+            "Lux primary carry — look for Invoker duo: Orianna → Lissandra → Zilean.",
+            "Can also target Ziggs late game.",
+            "Demacia emblem: swap Xin Zhao/Poppy for frontline (Shyvana/Swain).",
+            "Galio contributes Demacia from bench — doesn't take a unit slot. 10 total units.",
+            "Beginner-friendly comp."
+          ]
+        },
+        {
+          "id": "demacia_sona_reroll",
+          "name": "Demacia Sona Reroll",
+          "tier": "B",
+          "playstyle": "reroll",
+          "difficulty": "easy",
+          "description": "Sona 3-star as primary carry with Garen full tank. Unlock Galio on 8. Drop to 5 Demacia for high-value 4/5-costs.",
+          "gameplan": "Sona 3-star as primary carry with Garen full tank. Unlock Galio on 8. Drop to 5 Demacia for high-value 4/5-costs.",
+          "conditions": [
+            "Sona items important — Archangel's + Blue Buff minimum.",
+            "Hold Vaynes for Galio — don't invest items in Vayne.",
+            "Strong with Demacia emblem — drop Xin Zhao.",
+            "Beginner-friendly."
+          ],
+          "coreUnits": [
+            "Sona",
+            "Jarvan IV",
+            "Garen",
+            "Galio"
+          ],
+          "carryItems": {
+            "Sona": [
+              "Archangel's Staff",
+              "Blue Buff",
+              "Rabadon's"
+            ],
+            "Garen": [
+              "Gargoyle Stoneplate",
+              "Warmog's",
+              "Sunfire Cape"
+            ]
+          },
+          "levelingPattern": "Slow roll for Sona 3-star. Hold Vaynes for Galio. Unlock Galio ASAP on 8.",
+          "levelingGuide": [
+            "Stage 2: Slow roll for Sona 3-star. Jarvan 3 is bonus.",
+            "Stage 3: Hold Vaynes for Galio — don't itemize. Slow roll on 6.",
+            "Stage 4: Unlock Galio ASAP. Garen full tank items online. Lux holds leftover AP. Drop from 7 Demacia for high-value 4/5-costs."
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "Stage 1-2",
+              "units": [
+                "Sona",
+                "Jarvan IV",
+                "Vayne"
+              ],
+              "traits": [
+                "Demacia 3"
+              ],
+              "note": "Slow roll for Sona 3-star. Jarvan 3 is bonus."
+            },
+            "mid": {
+              "stage": "Stage 3",
+              "units": [
+                "Sona",
+                "Jarvan IV",
+                "Garen",
+                "Vayne"
+              ],
+              "traits": [
+                "Demacia 4"
+              ],
+              "note": "Hold Vaynes for Galio — don't itemize. Slow roll on 6."
+            },
+            "late": {
+              "stage": "Stage 4+",
+              "units": [
+                "Garen",
+                "Jarvan IV",
+                "Sona",
+                "Lux"
+              ],
+              "traits": [
+                "Demacia 5"
+              ],
+              "note": "Galio unlocked (bench). Garen full tank. Drop from 7 Demacia for high-value 4/5-costs.",
+              "positions": [
+                {
+                  "unit": "Garen",
+                  "row": 3,
+                  "col": 2
+                },
+                {
+                  "unit": "Jarvan IV",
+                  "row": 3,
+                  "col": 4
+                },
+                {
+                  "unit": "Sona",
+                  "row": 0,
+                  "col": 2
+                },
+                {
+                  "unit": "Lux",
+                  "row": 0,
+                  "col": 4
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Demacia emblem",
+              "score": 5,
+              "note": "Drop Xin Zhao with emblem."
+            },
+            {
+              "augment": "Reroll augments",
+              "score": 4,
+              "note": "Helps hit Sona 3-star."
+            },
+            {
+              "augment": "Living Forge",
+              "score": 3,
+              "note": "Good Demacia augment."
+            }
+          ],
+          "augmentAvoid": [],
+          "tips": [
+            "Sona items important but also prioritize TRUE tank items on Garen.",
+            "Invoker slot is flexible.",
+            "Strong with Demacia emblem — drop Xin Zhao.",
+            "Beginner-friendly."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bilgewater",
+      "name": "Bilgewater",
+      "tier": "A",
+      "description": "Port of Bilgewater — Silver Serpents from the Black Market grant bonus stats and loot. Spend: 2-star units > Captain's Brew > $15 stats. Graves unlock: TF holding an item at Level 6.",
+      "variants": [
+        {
+          "id": "bilgewater_tahm_mf",
+          "name": "Bilgewater Tahm Kench MF (Max Cap)",
+          "tier": "A",
+          "playstyle": "fast8",
+          "difficulty": "hard",
+          "description": "Rush 7 Bilgewater ASAP for Serpents, then drop to 5/3 Bilgewater late for higher-value units. Win condition is overwhelming item advantage from Serpents.",
+          "gameplan": "Rush 7 Bilgewater ASAP for Serpents, then drop to 5/3 Bilgewater late for higher-value units. Win condition is overwhelming item advantage from Serpents.",
+          "conditions": [
+            "PLAY FROM STRONG WINSTREAK OPENER ONLY.",
+            "Rush 7 Bilgewater for Serpents, drop late game for higher value.",
+            "DO NOT over-greed BIS items — overwhelming item advantage is the win condition.",
+            "Unlock Graves on Stage 1 by having TF hold an item.",
+            "Once you start losing, quickly transition to stronger late-game units."
+          ],
+          "coreUnits": [
+            "Miss Fortune",
+            "Tahm Kench",
+            "Graves",
+            "Twisted Fate",
+            "Illaoi"
+          ],
+          "carryItems": {
+            "Miss Fortune": [
+              "Rageblade",
+              "Last Whisper",
+              "Giant Slayer"
+            ],
+            "Tahm Kench": [
+              "Gargoyle Stoneplate",
+              "Warmog's"
+            ],
+            "Illaoi": [
+              "Sunfire",
+              "Warmog's"
+            ]
+          },
+          "levelingPattern": "Winstreak Fast 8. Slam everything early. Rush 7 Bilgewater. Once losing, transition.",
+          "levelingGuide": [
+            "Stage 2: Slam everything for winstreak. Unlock Graves early (TF with item). Frontline items strong on Illaoi 2.",
+            "Stage 3: Play 5 Bilgewater ASAP. Serpents: 2-star units > Captain's Brew > $15 stats. OK to Restock on 5 Bilge for MF copy.",
+            "Stage 4: Roll on Level 8 for Miss Fortune. Stay 7 Bilgewater while ahead. Feed TK $1 units until 2-star. Once losing, transition out of 7 Bilge into 4/5-cost value units."
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "Stage 1-2",
+              "units": [
+                "Twisted Fate",
+                "Bilgewater units",
+                "Illaoi"
+              ],
+              "traits": [
+                "Bilgewater 2"
+              ],
+              "note": "Slam everything for winstreak. Unlock Graves early (TF with item)."
+            },
+            "mid": {
+              "stage": "Stage 3",
+              "units": [
+                "Tahm Kench",
+                "Illaoi",
+                "Graves",
+                "Twisted Fate"
+              ],
+              "traits": [
+                "Bilgewater 5"
+              ],
+              "note": "Play 5 Bilgewater ASAP. Serpents: 2-star units > Captain's Brew > $15 stats."
+            },
+            "late": {
+              "stage": "Stage 4+",
+              "units": [
+                "Tahm Kench",
+                "Illaoi",
+                "Graves",
+                "Miss Fortune",
+                "Twisted Fate"
+              ],
+              "traits": [
+                "Bilgewater 7"
+              ],
+              "note": "Rush 7 Bilgewater. Roll for Miss Fortune. Once losing, transition to 4/5-cost units.",
+              "positions": [
+                {
+                  "unit": "Tahm Kench",
+                  "row": 3,
+                  "col": 1
+                },
+                {
+                  "unit": "Illaoi",
+                  "row": 3,
+                  "col": 3
+                },
+                {
+                  "unit": "Graves",
+                  "row": 3,
+                  "col": 5
+                },
+                {
+                  "unit": "Miss Fortune",
+                  "row": 0,
+                  "col": 2
+                },
+                {
+                  "unit": "Twisted Fate",
+                  "row": 0,
+                  "col": 4
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Bilgewater/Serpent augments",
+              "score": 5,
+              "note": "Core to the comp strategy."
+            },
+            {
+              "augment": "Winstreak augments",
+              "score": 5,
+              "note": "Play from STRONG opener ONLY."
+            },
+            {
+              "augment": "Win Out",
+              "score": 4,
+              "note": "Snowball with item advantage."
+            }
+          ],
+          "augmentAvoid": [],
+          "tips": [
+            "PLAY FROM STRONG WINSTREAK OPENER ONLY.",
+            "Rush 7 Bilgewater for Serpents, drop late game for higher value.",
+            "DO NOT over-greed BIS items — overwhelming item advantage is the win condition.",
+            "Unlock Graves on Stage 1 by having TF hold an item.",
+            "Once you start losing, quickly transition to stronger late-game units."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "targon",
+      "name": "Targon",
+      "tier": "B",
+      "description": "Peak of Targon — home of celestial beings. Aurelion Sol as primary AP carry. Play from any AP opener. Only commit if you can hit level 8 with good econ.",
+      "variants": [
+        {
+          "id": "targon_asol_flex",
+          "name": "ASol Flex",
+          "tier": "B",
+          "playstyle": "fast8",
+          "difficulty": "hard",
+          "description": "Level 8 Aurelion Sol as primary carry. Flex board around Targon 2 + Invoker 2 + Bruiser 2. Only commit if you can hit level 8 with good econ.",
+          "gameplan": "Level 8 Aurelion Sol as primary carry. Flex board around Targon 2 + Invoker 2 + Bruiser 2. Only commit if you can hit level 8 with good econ.",
+          "conditions": [
+            "Play from any AP opener — Bard, Zoe, or Leona all work as early holders.",
+            "Aurelion Sol is the main carry — prioritize AP items on him.",
+            "Sylas unlock: sell 2* Jarvan + 2* Garen + 2* Lux at level 9.",
+            "This comp is an exodia line — only commit if you can hit level 8 with good econ."
+          ],
+          "coreUnits": [
+            "Aurelion Sol",
+            "Vi",
+            "Swain",
+            "Seraphine",
+            "Taric",
+            "Azir",
+            "Shyvana",
+            "Xerath",
+            "Sylas"
+          ],
+          "carryItems": {
+            "Aurelion Sol": [
+              "Hextech Gunblade",
+              "Spear of Shojin",
+              "Warmog's Armor"
+            ],
+            "Seraphine": [
+              "AP items"
+            ]
+          },
+          "levelingPattern": "Fast 8. AP opener. Aurelion Sol main carry. Flex Xerath or Lucian & Senna depending on what you find.",
+          "levelingGuide": [
+            "Stage 2: Play from any AP opener — Bard, Zoe, or Leona all work as early holders.",
+            "Stage 3: Maintain tempo with AP items on item holder. Build toward Targon 2 + Invoker 2 synergy.",
+            "Stage 4: Fast 8. Find Aurelion Sol. Seraphine secondary carry and Invoker trait bot. Flex Xerath or Lucian & Senna depending on what you find."
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "Stage 1-2",
+              "units": [
+                "Aphelios",
+                "Bard",
+                "Leona",
+                "Zoe"
+              ],
+              "traits": [
+                "Targon 2"
+              ],
+              "note": "Play from any AP opener — Bard, Zoe, or Leona all work as early item holders."
+            },
+            "mid": {
+              "stage": "Stage 3",
+              "units": [
+                "Vi",
+                "Swain",
+                "Seraphine",
+                "Taric",
+                "Azir"
+              ],
+              "traits": [
+                "Targon 2",
+                "Invoker 2",
+                "Bruiser 2"
+              ],
+              "note": "Build toward Targon 2 + Invoker 2 synergy. Hold AP items for Aurelion Sol."
+            },
+            "late": {
+              "stage": "Stage 4+",
+              "units": [
+                "Sand Soldier",
+                "Swain",
+                "Vi",
+                "Shyvana",
+                "Sylas",
+                "Taric",
+                "Azir",
+                "Xerath",
+                "Aurelion Sol",
+                "Seraphine"
+              ],
+              "traits": [
+                "Targon 2",
+                "Invoker 2",
+                "Bruiser 2",
+                "Noxus 2",
+                "Shurima 2"
+              ],
+              "note": "Aurelion Sol main carry. Sylas unlocked. Seraphine secondary carry and Invoker bot.",
+              "positions": [
+                {
+                  "unit": "Sand Soldier",
+                  "row": 3,
+                  "col": 0
+                },
+                {
+                  "unit": "Swain",
+                  "row": 3,
+                  "col": 1
+                },
+                {
+                  "unit": "Vi",
+                  "row": 3,
+                  "col": 2
+                },
+                {
+                  "unit": "Shyvana",
+                  "row": 3,
+                  "col": 3
+                },
+                {
+                  "unit": "Sylas",
+                  "row": 3,
+                  "col": 4
+                },
+                {
+                  "unit": "Taric",
+                  "row": 3,
+                  "col": 5
+                },
+                {
+                  "unit": "Sand Soldier",
+                  "row": 3,
+                  "col": 6
+                },
+                {
+                  "unit": "Azir",
+                  "row": 0,
+                  "col": 0
+                },
+                {
+                  "unit": "Xerath",
+                  "row": 0,
+                  "col": 2
+                },
+                {
+                  "unit": "Aurelion Sol",
+                  "row": 0,
+                  "col": 4
+                },
+                {
+                  "unit": "Seraphine",
+                  "row": 0,
+                  "col": 6
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Jeweled Lotus",
+              "score": 5,
+              "note": "Top augment for Aurelion Sol — spell crit."
+            },
+            {
+              "augment": "Targon augments",
+              "score": 5,
+              "note": "Core regional augments."
+            },
+            {
+              "augment": "Late Game Scaling",
+              "score": 4,
+              "note": "ASol scales hard — excellent value."
+            },
+            {
+              "augment": "Combat augments",
+              "score": 3,
+              "note": "AP combat augments for Seraphine/Azir."
+            }
+          ],
+          "augmentAvoid": [],
+          "tips": [
+            "Play from any AP opener — Bard, Zoe, or Leona all work as early holders.",
+            "Aurelion Sol is the main carry — prioritize AP items on him.",
+            "Sylas unlock: sell 2* Jarvan + 2* Garen + 2* Lux at level 9.",
+            "Seraphine is a secondary carry and Invoker trait bot — keep her itemized.",
+            "Flex Xerath or Lucian & Senna depending on what you find.",
+            "This comp is an exodia line — only commit if you can hit level 8 with good econ."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bandle_city",
+      "name": "Bandle City",
+      "tier": "A",
+      "description": "Bandle City — Yordle Arcanist exodia line. Kennen, Kobuko, and Tibbers frontline. Annie + Lucian & Senna dual carry. Pure Fast 9 — only commit with econ augment or strong Yordle opener.",
+      "variants": [
+        {
+          "id": "bandle_city_yordle_arcanist",
+          "name": "Yordle Arcanist",
+          "tier": "A",
+          "playstyle": "fast9",
+          "difficulty": "hard",
+          "description": "Yordle 3 + Arcanist 3 on Level 9. Annie primary carry, Lucian & Senna secondary. Kennen, Kobuko, Tibbers frontline. Only commit with econ augment or strong Yordle opener.",
+          "gameplan": "Yordle 3 + Arcanist 3 on Level 9. Annie primary carry, Lucian & Senna secondary. Kennen, Kobuko, Tibbers frontline. Only commit with econ augment or strong Yordle opener.",
+          "conditions": [
+            "Annie is the primary carry — she needs Blue Buff + Shojin minimum to function.",
+            "Sylas unlock: sell 2* Jarvan + 2* Garen + 2* Lux at level 9.",
+            "Kennen unlock: 5 total star levels among Yordle/Ionia/Defender units at level 5+.",
+            "Kobuko unlock: 6 total star levels among Bruiser/Yordle/Invoker units at level 6+.",
+            "This is a pure Fast 9 line — only commit if you have econ augment or strong Yordle opener."
+          ],
+          "coreUnits": [
+            "Annie",
+            "Tibbers",
+            "Kennen",
+            "Kobuko & Yuumi",
+            "Wukong",
+            "Zilean",
+            "Lucian & Senna",
+            "Sett",
+            "Sylas"
+          ],
+          "carryItems": {
+            "Annie": [
+              "Blue Buff",
+              "Spear of Shojin",
+              "Statikk Shiv"
+            ],
+            "Lucian & Senna": [
+              "Last Whisper",
+              "Infinity Edge",
+              "Spear of Shojin"
+            ],
+            "Zilean": [
+              "Warmog's Armor",
+              "Adaptive Helm",
+              "Spear of Shojin"
+            ],
+            "Sett": [
+              "Jeweled Gauntlet"
+            ]
+          },
+          "levelingPattern": "Fast 9. Yordle opener. Econ augments required. Annie primary carry needs Blue Buff + Shojin minimum.",
+          "levelingGuide": [
+            "Stage 2: Best opener is Yordle early units — Lulu, Rumble, Poppy, Teemo all lead into this line naturally.",
+            "Stage 3: Maintain Yordle synergy. Slam mana items for Annie. Unlock Kennen and Kobuko with star levels.",
+            "Stage 4: Fast 9. Unlock Sylas (sell 2* Jarvan + Garen + Lux). Annie primary carry, Lucian & Senna secondary. Tibbers acts as frontline tank — worth HP items if available."
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "Stage 1-2",
+              "units": [
+                "Lulu",
+                "Rumble",
+                "Poppy",
+                "Teemo"
+              ],
+              "traits": [
+                "Yordle 3"
+              ],
+              "note": "Best opener is Yordle early units — Lulu, Rumble, Poppy, Teemo all lead into this line naturally."
+            },
+            "mid": {
+              "stage": "Stage 3",
+              "units": [
+                "Annie",
+                "Kennen",
+                "Kobuko & Yuumi",
+                "Wukong",
+                "Zilean"
+              ],
+              "traits": [
+                "Yordle 3",
+                "Arcanist 2"
+              ],
+              "note": "Build toward Yordle 3 + Arcanist synergy. Slam mana items for Annie. Unlock Kennen and Kobuko."
+            },
+            "late": {
+              "stage": "Stage 4+",
+              "units": [
+                "Kobuko & Yuumi",
+                "Kennen",
+                "Tibbers",
+                "Sylas",
+                "Wukong",
+                "Sett",
+                "Lucian & Senna",
+                "Zilean",
+                "Annie"
+              ],
+              "traits": [
+                "Yordle 3",
+                "Arcanist 3",
+                "Bruiser 2",
+                "Invoker 2",
+                "Defender 2"
+              ],
+              "note": "Level 9. Annie primary carry, Lucian & Senna secondary. Sylas unlocked. Tibbers frontline tank.",
+              "positions": [
+                {
+                  "unit": "Kobuko & Yuumi",
+                  "row": 3,
+                  "col": 0
+                },
+                {
+                  "unit": "Kennen",
+                  "row": 3,
+                  "col": 1
+                },
+                {
+                  "unit": "Tibbers",
+                  "row": 3,
+                  "col": 2
+                },
+                {
+                  "unit": "Sylas",
+                  "row": 3,
+                  "col": 3
+                },
+                {
+                  "unit": "Wukong",
+                  "row": 3,
+                  "col": 4
+                },
+                {
+                  "unit": "Sett",
+                  "row": 3,
+                  "col": 6
+                },
+                {
+                  "unit": "Lucian & Senna",
+                  "row": 0,
+                  "col": 0
+                },
+                {
+                  "unit": "Zilean",
+                  "row": 0,
+                  "col": 3
+                },
+                {
+                  "unit": "Annie",
+                  "row": 0,
+                  "col": 6
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Growth Mindset",
+              "score": 5,
+              "note": "Top augment — scales with fast leveling."
+            },
+            {
+              "augment": "Level 10",
+              "score": 5,
+              "note": "Lets you hit Level 10 for more cap."
+            },
+            {
+              "augment": "Hyper Roll",
+              "score": 4,
+              "note": "Strong econ for Yordle opener."
+            },
+            {
+              "augment": "Going Long",
+              "score": 4,
+              "note": "Rewards the Fast 9 gameplan."
+            },
+            {
+              "augment": "Hedge Fund",
+              "score": 4,
+              "note": "Econ to reach Level 9."
+            },
+            {
+              "augment": "Late Game Scaling",
+              "score": 3,
+              "note": "Annie and Zilean scale hard."
+            }
+          ],
+          "augmentAvoid": [],
+          "tips": [
+            "Best opener is Yordle early units — Lulu, Rumble, Poppy, Teemo all lead into this line naturally.",
+            "Annie is the primary carry — she needs Blue Buff + Shojin minimum to function.",
+            "Sylas unlock: sell 2* Jarvan + 2* Garen + 2* Lux at level 9.",
+            "Kennen unlock: 5 total star levels among Yordle/Ionia/Defender units at level 5+.",
+            "Kobuko unlock: 6 total star levels among Bruiser/Yordle/Invoker units at level 6+.",
+            "Tibbers acts as a frontline tank — worth giving him HP items if available.",
+            "Lucian & Senna is the secondary carry — needs AD items (LW + IE).",
+            "This is a pure Fast 9 line — only commit if you have econ augment or strong Yordle opener."
+          ]
+        },
+        {
+          "id": "bandle_city_veigar_yordle",
+          "name": "I AM EVIL! (Veigar Yordle)",
+          "tier": "X",
+          "playstyle": "Fast 9",
+          "difficulty": "Easy",
+          "description": "Stack Yordle trait for free rerolls and Grab Bag gold, then unlock Veigar at level 7 and transition to Ziggs carry at level 9.",
+          "gameplan": "ONLY play when you have Yordle openers with easy rod access. Collect every Yordle and stack econ through Bandle Bounty and free rerolls. Unlock Veigar at 7, push to 9, then transition Ziggs in as the late carry.",
+          "conditions": [
+            "Have the Veigar Hero Augment (I AM EVIL!) — REQUIRED",
+            "Have Yordle openers with multiple early rod components",
+            "Have econ augments or Bandle Bounty"
+          ],
+          "coreUnits": [
+            "Lulu",
+            "Rumble",
+            "Teemo",
+            "Kobuko & Yuumi",
+            "Kennen",
+            "Fizz",
+            "Wukong",
+            "Veigar",
+            "Ziggs"
+          ],
+          "carryItems": {
+            "Veigar": [
+              "Spear of Shojin",
+              "Blue Buff",
+              "Last Whisper",
+              "Runaan's Hurricane"
+            ]
+          },
+          "levelingPattern": "Level 7 by 3-5 (Veigar unlock) → Level 8 for Grab Bags → Level 9 for Ziggs transition",
+          "levelingGuide": [
+            "Stage 2: Collect every Yordle, focus on econ. Unlock Poppy ASAP for 4 Yordle on 2-3. Take every rod possible for Veigar unlock",
+            "Stage 3: Get 6 Yordles ASAP to start free rerolls. Unlock Veigar at level 7 by 3-5 latest. If very rich, level 8 for Yordle Grab Bags",
+            "Stage 4: Use free shop rerolls for upgrades while pushing levels. At 9, transition to Ziggs. End game: drop to 4/6 Yordles for better units"
+          ],
+          "boardProgression": {
+            "early": {
+              "stage": "1-1 to 2-5",
+              "units": [
+                "Rumble",
+                "Lulu",
+                "Teemo",
+                "Tristana"
+              ],
+              "traits": [
+                "Yordle 4"
+              ],
+              "note": "Collect every Yordle. Focus econ and rods. Unlock Poppy ASAP for 4 Yordle on 2-3."
+            },
+            "mid": {
+              "stage": "3-1 to 4-5",
+              "units": [
+                "Lulu",
+                "Rumble",
+                "Teemo",
+                "Kobuko & Yuumi",
+                "Kennen",
+                "Fizz",
+                "Wukong"
+              ],
+              "traits": [
+                "Yordle 6"
+              ],
+              "note": "6 Yordles active — free rerolls begin. Unlock Veigar at level 7 by 3-5 latest."
+            },
+            "late": {
+              "stage": "5-1+",
+              "units": [
+                "Wukong",
+                "Kobuko & Yuumi",
+                "Rumble",
+                "Kennen",
+                "Fizz",
+                "Ziggs",
+                "Teemo",
+                "Lulu",
+                "Veigar"
+              ],
+              "traits": [
+                "Yordle 8",
+                "Bruiser 2",
+                "Quickstriker 2",
+                "Arcanist 2",
+                "Disruptor 2"
+              ],
+              "note": "8 Yordles + Veigar. At 9, Ziggs transitions in as late carry. Drop weakest Yordles for flex units if needed.",
+              "positions": [
+                {
+                  "unit": "Wukong",
+                  "row": 3,
+                  "col": 0,
+                  "cost": 2
+                },
+                {
+                  "unit": "Kobuko & Yuumi",
+                  "row": 3,
+                  "col": 1,
+                  "cost": 1
+                },
+                {
+                  "unit": "Rumble",
+                  "row": 3,
+                  "col": 2,
+                  "cost": 2
+                },
+                {
+                  "unit": "Kennen",
+                  "row": 3,
+                  "col": 4,
+                  "cost": 3
+                },
+                {
+                  "unit": "Fizz",
+                  "row": 3,
+                  "col": 5,
+                  "cost": 1
+                },
+                {
+                  "unit": "Ziggs",
+                  "row": 0,
+                  "col": 0,
+                  "cost": 2
+                },
+                {
+                  "unit": "Teemo",
+                  "row": 0,
+                  "col": 2,
+                  "cost": 1
+                },
+                {
+                  "unit": "Lulu",
+                  "row": 0,
+                  "col": 4,
+                  "cost": 1
+                },
+                {
+                  "unit": "Veigar",
+                  "row": 0,
+                  "col": 6,
+                  "cost": 4
+                }
+              ]
+            }
+          },
+          "augmentSynergies": [
+            {
+              "augment": "Veigar Hero Augment (I AM EVIL!)",
+              "score": 10,
+              "note": "REQUIRED — do not play without it"
+            },
+            {
+              "augment": "Bandle Bounty I / II",
+              "score": 9,
+              "note": "Yordle gold engine — commit to Bandle City"
+            },
+            {
+              "augment": "Late Game Scaling",
+              "score": 8,
+              "note": "Best with Fast 9 transition to Ziggs"
+            },
+            {
+              "augment": "Pandora's Box",
+              "score": 7,
+              "note": "Item randomizer — flexible for Veigar items"
+            },
+            {
+              "augment": "Hedge Fund",
+              "score": 6,
+              "note": "Gold econ for Fast 9 push"
+            },
+            {
+              "augment": "Tome of Traits",
+              "score": 5,
+              "note": "Can hit Yordle or Arcanist emblem"
+            }
+          ],
+          "augmentAvoid": [
+            {
+              "augment": "Reroll augments",
+              "note": "Do not reroll for 1-2 cost 3-stars — this is a Fast 9 comp"
+            },
+            {
+              "augment": "Combat augments",
+              "note": "Econ and items take priority over combat augments"
+            }
+          ],
+          "tips": [
+            "ONLY play when you have Yordle openers with easy access to multiple rods",
+            "Don't reroll for 1-2 cost 3-star Yordles",
+            "Level to 7 quickly to unlock Veigar → Level 8 for Yordle Grab Bag value",
+            "Fizz / Teemo holds items for Ziggs until you transition",
+            "Stage 2: Collect every Yordle and focus on econ. Unlock Poppy ASAP to guarantee 4 Yordle on 2-3. Take every rod possible for Veigar unlock",
+            "Stage 3: Get in 6 Yordles ASAP to start stacking free rerolls. Unlock Veigar on 7 by 3-5 latest. If very rich, okay to Level 8 for Yordle Grab Bags",
+            "Stage 4: Unlock Veigar and use free shop rerolls to get upgrades while pushing levels. Once at 9, transition to Ziggs. End game, drop to 4/6 Yordles for better units"
+          ]
+        }
+      ]
+    }
+  ],
+  "augmentCategories": {
+    "econ": [
+      "3 Threes",
+      "A Magic Roll",
+      "Advanced Loan",
+      "Advanced Loan+",
+      "Aura Farming",
+      "Big Grab Bag",
+      "Big Spender",
+      "Birthday Present",
+      "Birthday Reunion",
+      "Calculated Loss",
+      "Called Shot",
+      "Care Package",
+      "Caretaker's Ally",
+      "Caretaker's Favor",
+      "Clear Mind",
+      "Cluttered Mind",
+      "Comeback Story",
+      "Commerce Core",
+      "Component Buffet",
+      "Construct a Companion",
+      "Cooking Pot",
+      "Delayed Start",
+      "Dummify",
+      "Duo Queue",
+      "Efficient Shopper",
+      "Epoch",
+      "Epoch+",
+      "Exclusive Customization",
+      "Explosive Growth",
+      "Explosive Growth+",
+      "Firesale",
+      "Forward Thinking",
+      "Four Score",
+      "Gain 21 Gold",
+      "Gilded Steel",
+      "Going Long",
+      "Gold Destiny",
+      "Gold Destiny+",
+      "Golemify",
+      "Good For Something I",
+      "Growth Mindset",
+      "Hard Bargain",
+      "Hedge Fund",
+      "Heroic Grab Bag",
+      "Heroic Grab Bag+",
+      "Heroic Grab Bag++",
+      "Hustler",
+      "Indecision I",
+      "Indecision II",
+      "Invested+",
+      "Invested++",
+      "Iron Assets",
+      "Item Grab Bag",
+      "Just Hit",
+      "Late Game Specialist",
+      "Level Up!",
+      "Lunch Money",
+      "Luxury Subscription",
+      "Malicious Monetization",
+      "Max Build",
+      "Missed Connections",
+      "Money Monsoon",
+      "Nine Lives",
+      "On a Roll",
+      "One Two Three",
+      "One, Two, Five!",
+      "Over Encumbered",
+      "Pandora's Bench",
+      "Pandora's Items",
+      "Patient Study",
+      "Pilfer",
+      "Placebo",
+      "Placebo+",
+      "Preparation I",
+      "Preparation II",
+      "Prismatic Destiny",
+      "Prismatic Destiny+",
+      "Prizefighter",
+      "Raining Gold",
+      "ReinFOURcement",
+      "Restart Mission",
+      "Risky Moves",
+      "Savings Account",
+      "Silver Destiny",
+      "Silver Destiny+",
+      "Silver Spoon",
+      "Slice of Life",
+      "Slightly Magic Roll",
+      "Small Grab Bag",
+      "Solo Leveling",
+      "Spoils of War I",
+      "Spoils of War II",
+      "Spoils of War III",
+      "Stars Are Born",
+      "Starter Kit",
+      "Survivor",
+      "Table Scraps",
+      "Team Building",
+      "Teaming Up",
+      "The Golden Egg",
+      "Tiniest Titan",
+      "Titanic Titan",
+      "Trade Sector",
+      "Treasure Hunt",
+      "Trifecta I",
+      "Trifecta II",
+      "Two Trick",
+      "Upward Mobility",
+      "Warpath",
+      "Worth the Wait",
+      "Worth the Wait II"
+    ],
+    "reroll": [
+      "Crafted Crafting",
+      "Epic Rolldown",
+      "Expected Unexpectedness",
+      "Hefty Rolls",
+      "Max Build",
+      "Pandora's Items",
+      "Pandora's Items II",
+      "Pandora's Items III",
+      "Patience is a Virtue",
+      "Pilfer",
+      "Prismatic Ticket",
+      "Recombobulator",
+      "Reroll augments",
+      "Rolling For Days I",
+      "Shopping Spree",
+      "Solo Leveling",
+      "Two Much Value",
+      "Worth the Wait",
+      "Worth the Wait II"
+    ],
+    "combat_ap": [
+      "AP item augments",
+      "Air Axiom",
+      "Arcane Viktor-y",
+      "Ascension",
+      "Augmented Power",
+      "Backup Bows",
+      "Best Friends I",
+      "Best Friends II",
+      "Big Friend I",
+      "Bodyguard Training",
+      "Boxing Lessons",
+      "Bronze For Life I",
+      "Bronze For Life II",
+      "Celestial Blessing I",
+      "Celestial Blessing II",
+      "Celestial Blessing III",
+      "Chaos Magic",
+      "Chaotic Evolution",
+      "Clockwork Accelerator",
+      "Continuous Conjuration",
+      "Corrosion",
+      "Critical Success",
+      "Crown's Will",
+      "Cry Me A River",
+      "Darkwill's Invasion",
+      "Deadlier Caps",
+      "Defense of the Placidium",
+      "Demacia Forever",
+      "Double Trouble",
+      "Early Education",
+      "Early Learnings",
+      "Earth Axiom",
+      "Exiles I",
+      "Exiles II",
+      "Extra Buckles",
+      "Find Your Center",
+      "Fire Axiom",
+      "Flowing Tears",
+      "Focused Fire",
+      "Giant and Mighty",
+      "Glass Cannon I",
+      "Glass Cannon II",
+      "Healing Orbs I",
+      "Healing Orbs II",
+      "Heart of Steel",
+      "Heavy Is the Crown",
+      "High Voltage",
+      "Hold the Line",
+      "Infinity Protection",
+      "Jeweled Lotus I",
+      "Jeweled Lotus II",
+      "Kahunahuna",
+      "Know Your Enemy",
+      "Last Second Save",
+      "Late Game Scaling",
+      "Lineup",
+      "Little Buddies",
+      "Mace's Will",
+      "Makeshift Armor I",
+      "Makeshift Armor II",
+      "Mess Hall",
+      "Plot Armor",
+      "Precision and Grace",
+      "Promised Protection",
+      "Pyromaniac",
+      "Second Wind",
+      "Second Wind II",
+      "Seraphim's Staff",
+      "Solo Plate",
+      "Soul Awakening",
+      "Spirit Link",
+      "Spirit of Redemption",
+      "Stand United",
+      "Thorn-Plated Armor",
+      "Timewinders",
+      "Tiny but Deadly",
+      "Tons of Stats!",
+      "Wand Overflow",
+      "Warlord's Honor",
+      "Woven Magic"
+    ],
+    "combat_ad": [
+      "AD item augments",
+      "Artillery Barrage",
+      "Bandle Bounty I",
+      "Bandle Bounty II",
+      "Blood Offering",
+      "Bringer of Ruin",
+      "Carve a Path",
+      "Chosen Wolves",
+      "Cosmic Calling",
+      "Crash Test Dummies",
+      "Deadlier Blades",
+      "Dragonguards",
+      "Evolve and Overcome",
+      "Eye For An Eye",
+      "Eye For An Eye+",
+      "Feed the Flames",
+      "Indiscriminate Killer",
+      "Ixtal Expeditionist",
+      "Leap of Faith",
+      "Lifting Competition",
+      "NO SCOUT NO PIVOT",
+      "Retribution",
+      "Secrets of the Sands",
+      "Sentinels of Light",
+      "Silco's Revenge",
+      "Slammin'",
+      "Slammin'+",
+      "Spear's Will",
+      "Speedy Double Kill",
+      "Staffsmith",
+      "Sword Overflow",
+      "Swordsmith",
+      "The Ruined King",
+      "Trials of Twilight",
+      "Trials of Twilight II",
+      "U.R.F",
+      "Urf's Gambit",
+      "Walk The True Path I",
+      "Walk The True Path II",
+      "Wild Growth",
+      "Win Out"
+    ],
+    "emblem": [
+      "Branching Out",
+      "Branching Out+",
+      "Flexible",
+      "Hard Commit",
+      "Legion of Threes",
+      "Spreading Roots",
+      "Spreading Roots+",
+      "Tactician's Kitchen",
+      "The Trait Tree",
+      "The Trait Tree+",
+      "The World Runes",
+      "Unsealed From Steel",
+      "We Stick Together"
+    ],
+    "artifact": [
+      "Band of Thieves",
+      "Band of Thieves II",
+      "Band of Thieves II+",
+      "Band of Thieves II++",
+      "Belt Overflow",
+      "Binary Airdrop",
+      "Buried Treasures",
+      "Call to Chaos",
+      "Component Heist",
+      "Coronation",
+      "Cursed Crown",
+      "Forged in Strength",
+      "Latent Forge",
+      "Living Forge",
+      "Lucky Gloves",
+      "Lucky Gloves+",
+      "Min-Max",
+      "One Buff Two Buff",
+      "Pandora's Items II",
+      "Pandora's Items III",
+      "Portable Forge",
+      "Radiant Rascal",
+      "Radiant Relics",
+      "Replication",
+      "Salvage Bin",
+      "Salvage Bin+",
+      "Shimmerscale Essence",
+      "Sweet Treats",
+      "The Golden Dragon"
+    ]
+  },
+  "augmentSignals": {
+    "description": "Key augments that strongly signal a specific comp line.",
+    "signals": [
+      {
+        "augment": "Ixtal Expeditionist",
+        "primaryComp": "ixtal_sandy_brock",
+        "note": "Required — only play Sandy Brock if you see this",
+        "category": "ECON"
+      },
+      {
+        "augment": "Aura Farming",
+        "primaryComp": "shurima_arcanist_annie",
+        "note": "Best Annie augment — doubles Shurima loot value",
+        "category": "ECON"
+      },
+      {
+        "augment": "Path of Spirits",
+        "primaryComp": "ionia_yone",
+        "note": "Best Ionia augment — commit hard to Yone line",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Zaun Emblem",
+        "primaryComp": "zaun_zaunara",
+        "note": "Enables 5 Zaun without natural copies",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Secrets of the Sands",
+        "primaryComp": "shurima_arcanist_annie",
+        "note": "Shurima augment — strong with Azir soldiers",
+        "category": "ECON"
+      },
+      {
+        "augment": "Noxus Emblem",
+        "primaryComp": "noxus_mel_fast9",
+        "note": "Lets you hit 10 Noxus — only with emblem augment",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Piltover Emblem",
+        "primaryComp": "piltover_warden_thex",
+        "note": "Enables 6 Piltover earlier than natural",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Freljord Emblem",
+        "primaryComp": "freljord_lissandraphine",
+        "note": "Enables 4 Freljord tower synergy sooner",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Disruptor Emblem",
+        "primaryComp": "freljord_lissandraphine",
+        "secondaryComp": "targon_asol_flex",
+        "note": "Strong on Lissandra or Seraphine",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Invoker Emblem",
+        "primaryComp": "demacia_lux",
+        "secondaryComp": "freljord_lissandraphine",
+        "note": "Enables Invoker duo carry on any AP line",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Arcanist Emblem",
+        "primaryComp": "shurima_arcanist_annie",
+        "note": "Adds free Arcanist stack — strong on Annie",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Econ augments (general)",
+        "primaryComp": "noxus_mel_fast9",
+        "note": "Any gold-generating augment enables Fast 9. Mel is highest cap.",
+        "category": "ECON"
+      },
+      {
+        "augment": "Late Game Scaling",
+        "primaryComp": "noxus_mel_fast9",
+        "secondaryComp": "shurima_arcanist_annie",
+        "note": "Best with S-tier Fast 9 lines",
+        "category": "ECON"
+      },
+      {
+        "augment": "Level 10",
+        "primaryComp": "noxus_mel_fast9",
+        "secondaryComp": "bandle_city_yordle_arcanist",
+        "note": "Enables 10-unit boards — premium for any Fast 9",
+        "category": "ECON"
+      },
+      {
+        "augment": "Going Long",
+        "primaryComp": "bandle_city_yordle_arcanist",
+        "secondaryComp": "noxus_mel_fast9",
+        "note": "Strong XP augment for Fast 9 lines",
+        "category": "ECON"
+      },
+      {
+        "augment": "Hedge Fund",
+        "primaryComp": "bandle_city_yordle_arcanist",
+        "secondaryComp": "noxus_mel_fast9",
+        "note": "Gold econ — commit to Fast 9",
+        "category": "ECON"
+      },
+      {
+        "augment": "Hyper Roll",
+        "primaryComp": "bandle_city_yordle_arcanist",
+        "note": "Good for Yordle opener into Fast 9",
+        "category": "REROLL"
+      },
+      {
+        "augment": "Growth Mindset",
+        "primaryComp": "bandle_city_yordle_arcanist",
+        "note": "Best econ augment for Yordle line",
+        "category": "ECON"
+      },
+      {
+        "augment": "Pandora's Box",
+        "note": "Item randomizer — flexible into any line",
+        "category": "ECON"
+      },
+      {
+        "augment": "Jeweled Lotus",
+        "primaryComp": "noxus_mel_fast9",
+        "secondaryComp": "targon_asol_flex",
+        "note": "AP crit — best on Mel or Aurelion Sol",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Jeweled Lotus II",
+        "primaryComp": "noxus_mel_fast9",
+        "note": "Upgraded version — commit fully to AP carry",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Jeweled Lotus III",
+        "primaryComp": "noxus_mel_fast9",
+        "note": "Prismatic — highest cap AP carry game",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Stationary Force",
+        "primaryComp": "shurima_arcanist_annie",
+        "note": "Strong with Annie who stays backline",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Slammin'",
+        "primaryComp": "noxus_mel_fast9",
+        "note": "Item slam augment — good with AP item openers",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Water Axiom",
+        "primaryComp": "noxus_mel_fast9",
+        "note": "Noxus-flavored combat augment",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Duo Queue",
+        "primaryComp": "noxus_mel_fast9",
+        "secondaryComp": "noxus_kindred_fast9",
+        "note": "Strong with Lucian & Senna pairing",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Bringer of Ruin",
+        "primaryComp": "noxus_leblanc_atakhan",
+        "note": "Makes Atakhan scale extremely well — can be game winning",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Lifting Competition",
+        "primaryComp": "noxus_leblanc_atakhan",
+        "note": "Enables the fast 9 version of LeBlanc line",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Titan's Resolve",
+        "primaryComp": "ionia_yone",
+        "note": "BIS on Yone — CC immunity stacks perfectly",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Win Out",
+        "primaryComp": "void_kaisa",
+        "note": "Winstreak augment — strong with Void Kai'Sa fast 8",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Leeching Nucleus",
+        "primaryComp": "void_kaisa",
+        "note": "Best Void mutation — BIS augment for Kai'Sa line",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Spitter Spines",
+        "primaryComp": "void_kaisa",
+        "note": "Second-best Void mutation after Leeching Nucleus",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Reroll augments (general)",
+        "primaryComp": "ionia_ahri_yone_reroll",
+        "note": "Any reroll-enabling augment points to 3-cost reroll lines",
+        "category": "REROLL"
+      },
+      {
+        "augment": "A Magic Roll",
+        "primaryComp": "ionia_ahri_yone_reroll",
+        "note": "Free rerolls if no buy — strong for Ahri 3 target",
+        "category": "REROLL"
+      },
+      {
+        "augment": "3 Threes",
+        "primaryComp": "ionia_ahri_yone_reroll",
+        "secondaryComp": "noxus_leblanc_atakhan",
+        "note": "3-star augment — commit to reroll line with early 3-cost copies",
+        "category": "REROLL"
+      },
+      {
+        "augment": "Bandle Bounty I/II",
+        "primaryComp": "bandle_city_yordle_arcanist",
+        "note": "Yordle gold generation — commit to Bandle City line",
+        "category": "REROLL"
+      },
+      {
+        "augment": "Blood Offering",
+        "note": "Strong item-generating augment for reroll comps",
+        "category": "REROLL"
+      },
+      {
+        "augment": "Artifact Anvil",
+        "note": "Choose an artifact — pick based on your carry (Dawncore for AP, etc.)",
+        "category": "ECON"
+      },
+      {
+        "augment": "Tome of Traits",
+        "primaryComp": "noxus_mel_fast9",
+        "secondaryComp": "demacia_lux",
+        "note": "Random emblem — can enable 10 Noxus or key trait bonuses",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Radiant Item",
+        "note": "Radiant item — prioritize carry lines (Mel, Annie, Yone)",
+        "category": "ECON"
+      },
+      {
+        "augment": "Cybernetic Implants",
+        "note": "Item augment — works on any comp with full items",
+        "category": "ECON"
+      },
+      {
+        "augment": "Learning From Experience",
+        "primaryComp": "noxus_mel_fast9",
+        "note": "XP gain — strong for fast 9 lines",
+        "category": "ECON"
+      },
+      {
+        "augment": "Going Long",
+        "primaryComp": "noxus_kindred_fast9",
+        "secondaryComp": "noxus_mel_fast9",
+        "note": "Fast 9 econ to hit Kindred 2 + Noxus 6",
+        "category": "ECON"
+      },
+      {
+        "augment": "Hedge Fund",
+        "primaryComp": "noxus_kindred_fast9",
+        "secondaryComp": "noxus_mel_fast9",
+        "note": "Max interest supports slow roll to 9",
+        "category": "ECON"
+      },
+      {
+        "augment": "Kindred Emblem",
+        "primaryComp": "noxus_kindred_fast9",
+        "note": "Frees a flex slot in the backline",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Noxus Emblem",
+        "primaryComp": "noxus_kindred_fast9",
+        "note": "Hits Noxus 6 easier",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Win Out",
+        "primaryComp": "noxus_kindred_fast9",
+        "secondaryComp": "si_warden_kalista",
+        "note": "Kindred winstreak line",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Draven Augment / AD combat augments",
+        "primaryComp": "noxus_kindred_fast9",
+        "note": "Draven early holder synergy",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Bilgewater Emblem",
+        "primaryComp": "noxus_kindred_fast9",
+        "secondaryComp": "bilgewater_tahm_mf",
+        "note": "Draven gold generation",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Kalista Emblem",
+        "primaryComp": "si_warden_kalista",
+        "note": "Core carry enabler for Kalista",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Warden Emblem",
+        "primaryComp": "si_warden_kalista",
+        "note": "Extra Warden without buying the unit",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Shadow Isles Emblem",
+        "primaryComp": "si_warden_kalista",
+        "note": "Hits SI trait easier",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Death's Defiance",
+        "primaryComp": "si_warden_kalista",
+        "note": "Kalista survives longer as sole backline carry",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Spoils of War II",
+        "primaryComp": "si_warden_kalista",
+        "note": "Warden frontline kills give extra loot",
+        "category": "ECON"
+      },
+      {
+        "augment": "Forged in Strength",
+        "primaryComp": "si_warden_kalista",
+        "secondaryComp": "si_viego_ruined_king",
+        "note": "Kalista artifact options",
+        "category": "ARTIFACT"
+      },
+      {
+        "augment": "Celestial Blessing II",
+        "primaryComp": "si_warden_kalista",
+        "note": "Kalista omnivamp keeps her alive",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "The Ruined King",
+        "primaryComp": "si_viego_ruined_king",
+        "note": "REQUIRED — direct Viego power augment",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Viego Emblem",
+        "primaryComp": "si_viego_ruined_king",
+        "note": "Extra SI unit slot",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Shadow Isles Emblem",
+        "primaryComp": "si_viego_ruined_king",
+        "note": "Hits SI trait easier",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Death's Defiance",
+        "primaryComp": "si_viego_ruined_king",
+        "note": "Viego survives to collect souls faster",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Chosen Wolves",
+        "primaryComp": "si_viego_ruined_king",
+        "secondaryComp": "si_warden_kalista",
+        "note": "Ambessa + Kindred SI synergy",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Forged in Strength",
+        "primaryComp": "si_viego_ruined_king",
+        "note": "Viego artifact options",
+        "category": "ARTIFACT"
+      },
+      {
+        "augment": "Gold Collector",
+        "primaryComp": "si_viego_ruined_king",
+        "note": "Slow roll econ to hit Viego 3-star",
+        "category": "ECON"
+      },
+      {
+        "augment": "Warden Emblem",
+        "primaryComp": "piltover_warden_thex",
+        "note": "Extra Warden for T-Hex scaling",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Infinity Protection",
+        "primaryComp": "piltover_warden_thex",
+        "note": "T-Hex row shield synergy",
+        "category": "ARTIFACT"
+      },
+      {
+        "augment": "Belt Overflow",
+        "primaryComp": "piltover_warden_thex",
+        "note": "Warden frontline health stacking",
+        "category": "ARTIFACT"
+      },
+      {
+        "augment": "Giant and Mighty",
+        "primaryComp": "piltover_warden_thex",
+        "note": "Warden health scaling",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Caretaker's Favor",
+        "primaryComp": "piltover_warden_thex",
+        "note": "Component anvils for T-Hex items",
+        "category": "ECON"
+      },
+      {
+        "augment": "Binary Airdrop",
+        "primaryComp": "piltover_warden_thex",
+        "secondaryComp": "shurima_demacia_ryze_sett",
+        "note": "T-Hex third item free",
+        "category": "ARTIFACT"
+      },
+      {
+        "augment": "Shurima Emblem",
+        "primaryComp": "shurima_demacia_ryze_sett",
+        "note": "Ryze region trait easier",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Demacia Emblem",
+        "primaryComp": "shurima_demacia_ryze_sett",
+        "note": "Extra Demacia for Sett synergy",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Secrets of the Sands",
+        "primaryComp": "shurima_demacia_ryze_sett",
+        "note": "Free Azir + Shuriman item generation",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Demacia Forever",
+        "primaryComp": "shurima_demacia_ryze_sett",
+        "note": "Demacian rally scaling",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Jeweled Lotus I",
+        "primaryComp": "shurima_demacia_ryze_sett",
+        "secondaryComp": "bandle_city_yordle_arcanist",
+        "note": "Sett crit carry",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Going Long",
+        "primaryComp": "shurima_demacia_ryze_sett",
+        "secondaryComp": "noxus_mel_fast9",
+        "note": "Fast 9 to cap with Ryze",
+        "category": "ECON"
+      },
+      {
+        "augment": "Hold the Line",
+        "primaryComp": "shurima_demacia_ryze_sett",
+        "note": "Demacia frontline buffs backline carries",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Lux Emblem",
+        "primaryComp": "demacia_lux",
+        "note": "Lux carry power spike",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Demacia Emblem",
+        "primaryComp": "demacia_lux",
+        "note": "Extra Demacia trait",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Demacia Forever",
+        "primaryComp": "demacia_lux",
+        "note": "Permanent Demacian rally scaling",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Heavy Is the Crown",
+        "primaryComp": "demacia_lux",
+        "note": "Crown of Demacia on Lux",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Jeweled Lotus I",
+        "primaryComp": "demacia_lux",
+        "secondaryComp": "shurima_arcanist_annie",
+        "note": "Lux crit carries",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Deadlier Caps",
+        "primaryComp": "demacia_lux",
+        "note": "Lux Deathcap stacking",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Soul Awakening",
+        "primaryComp": "demacia_lux",
+        "note": "AP backline scaling",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Sona Emblem",
+        "primaryComp": "demacia_sona_reroll",
+        "note": "Sona carry power",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Demacia Emblem",
+        "primaryComp": "demacia_sona_reroll",
+        "note": "Trait filler",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Demacia Forever",
+        "primaryComp": "demacia_sona_reroll",
+        "note": "Permanent rally stacks on Sona",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Rolling For Days I",
+        "primaryComp": "demacia_sona_reroll",
+        "note": "Slow roll for Sona 3-star",
+        "category": "REROLL"
+      },
+      {
+        "augment": "Epic Rolldown",
+        "primaryComp": "demacia_sona_reroll",
+        "secondaryComp": "ionia_ahri_yone_reroll",
+        "note": "Level 8 rolldown for Sona 2-star first",
+        "category": "REROLL"
+      },
+      {
+        "augment": "Crafted Crafting",
+        "primaryComp": "demacia_sona_reroll",
+        "note": "Reroll economy",
+        "category": "REROLL"
+      },
+      {
+        "augment": "Warlord's Honor",
+        "primaryComp": "demacia_sona_reroll",
+        "note": "AP scaling per round for Sona",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Bilgewater Emblem",
+        "primaryComp": "bilgewater_tahm_mf",
+        "note": "Core trait enabler",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Miss Fortune Emblem",
+        "primaryComp": "bilgewater_tahm_mf",
+        "note": "MF carry power",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Gunner Emblem",
+        "primaryComp": "bilgewater_tahm_mf",
+        "note": "MF Gunner synergy",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Precision and Grace",
+        "primaryComp": "bilgewater_tahm_mf",
+        "note": "MF on-takedown dash + attack speed",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Pyromaniac",
+        "primaryComp": "bilgewater_tahm_mf",
+        "note": "MF burn synergy",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Going Long",
+        "primaryComp": "bilgewater_tahm_mf",
+        "secondaryComp": "noxus_kindred_fast9",
+        "note": "Fast 9 to cap with MF + Tahm frontline",
+        "category": "ECON"
+      },
+      {
+        "augment": "Clockwork Accelerator",
+        "primaryComp": "bilgewater_tahm_mf",
+        "note": "MF attack speed ramp",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Targon Emblem",
+        "primaryComp": "targon_asol_flex",
+        "note": "Hits Targon trait for ASol scaling",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Invoker Emblem",
+        "primaryComp": "targon_asol_flex",
+        "note": "ASol mana regen synergy",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Jeweled Lotus I",
+        "primaryComp": "targon_asol_flex",
+        "secondaryComp": "noxus_mel_fast9",
+        "note": "ASol crit abilities",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Late Game Scaling",
+        "primaryComp": "targon_asol_flex",
+        "note": "ASol 5-cost needs level 9 to hit",
+        "category": "ECON"
+      },
+      {
+        "augment": "Going Long",
+        "primaryComp": "targon_asol_flex",
+        "secondaryComp": "noxus_mel_fast9",
+        "note": "XP acceleration to reach ASol",
+        "category": "ECON"
+      },
+      {
+        "augment": "Seraphim's Staff",
+        "primaryComp": "targon_asol_flex",
+        "note": "ASol Archangel's bonus mana regen",
+        "category": "ARTIFACT"
+      },
+      {
+        "augment": "Soul Awakening",
+        "primaryComp": "targon_asol_flex",
+        "note": "AP scaling for ASol backline",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Bandle Bounty I",
+        "primaryComp": "bandle_city_veigar_yordle",
+        "note": "REQUIRED — Yordle unlock gold generation",
+        "category": "ECON"
+      },
+      {
+        "augment": "Bandle Bounty II",
+        "primaryComp": "bandle_city_veigar_yordle",
+        "note": "REQUIRED — stronger Yordle unlock scaling",
+        "category": "ECON"
+      },
+      {
+        "augment": "Veigar Emblem",
+        "primaryComp": "bandle_city_veigar_yordle",
+        "note": "I AM EVIL augment enabler",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Yordle Emblem",
+        "primaryComp": "bandle_city_veigar_yordle",
+        "note": "Extra Yordle trait slot",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Going Long",
+        "primaryComp": "bandle_city_veigar_yordle",
+        "secondaryComp": "bandle_city_yordle_arcanist",
+        "note": "Level 10 Yordle line",
+        "category": "ECON"
+      },
+      {
+        "augment": "Wild Growth",
+        "primaryComp": "bandle_city_veigar_yordle",
+        "note": "3-star Yordle size + stats",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Tiny but Deadly",
+        "primaryComp": "bandle_city_veigar_yordle",
+        "note": "Yordle attack speed scaling",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Ixtal Emblem",
+        "primaryComp": "ixtal_sandy_brock",
+        "note": "Extra Ixtal trait for quest completion",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Secrets of the Sands",
+        "primaryComp": "ixtal_sandy_brock",
+        "secondaryComp": "shurima_demacia_ryze_sett",
+        "note": "Azir + Shuriman items synergy",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Going Long",
+        "primaryComp": "ixtal_sandy_brock",
+        "secondaryComp": "noxus_mel_fast9",
+        "note": "XP to hit Ryze cap",
+        "category": "ECON"
+      },
+      {
+        "augment": "Spoils of War II",
+        "primaryComp": "ixtal_sandy_brock",
+        "note": "Brock frontline kills generate loot",
+        "category": "ECON"
+      },
+      {
+        "augment": "Jeweled Lotus I",
+        "primaryComp": "ixtal_sandy_brock",
+        "secondaryComp": "targon_asol_flex",
+        "note": "Seraphine crit carry",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Shurima Emblem",
+        "primaryComp": "shurima_arcanist_annie",
+        "note": "Ryze region trait easier",
+        "category": "EMBLEM"
+      },
+      {
+        "augment": "Jeweled Lotus I",
+        "primaryComp": "shurima_arcanist_annie",
+        "note": "Annie crit abilities",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Chaos Magic",
+        "primaryComp": "shurima_arcanist_annie",
+        "note": "Arcanist mana regen + board effects",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Deadlier Caps",
+        "primaryComp": "shurima_arcanist_annie",
+        "note": "Annie Deathcap stacking",
+        "category": "COMBAT"
+      },
+      {
+        "augment": "Soul Awakening",
+        "primaryComp": "shurima_arcanist_annie",
+        "secondaryComp": "demacia_lux",
+        "note": "AP backline scaling",
+        "category": "COMBAT"
+      }
+    ]
+  }
+}

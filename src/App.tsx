@@ -67,7 +67,7 @@ export default function App() {
             </a>
             <a
               className="dl-btn dl-btn--win"
-              href="https://github.com/hotdogvulkin/tft-line-helper/releases/latest/download/TFT.Line.Helper.Setup.1.0.0.exe"
+              href="https://github.com/hotdogvulkin/tft-line-helper/releases/download/latest/TFT.Line.Helper.Setup.1.0.0.exe"
               download
             >
               ↓ Windows
